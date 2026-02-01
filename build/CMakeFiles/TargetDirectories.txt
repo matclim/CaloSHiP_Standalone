@@ -1,0 +1,3 @@
+/home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/build/CMakeFiles/geant_plate.dir
+/home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/build/CMakeFiles/edit_cache.dir
+/home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/build/CMakeFiles/rebuild_cache.dir

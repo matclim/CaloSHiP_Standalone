@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,24 @@
+
+# ---------- geometry (must be before /run/initialize) ----------
+/det/widePlaneXY 2.16 m
+/det/wideT 1 cm
+/det/widePitch 6 cm
+
+/det/thinPlaneXY 2.16 m
+/det/thinT 1 cm
+/det/thinPitch 1 cm
+
+/det/pbT 3 mm
+
+# Default (20x "1727") is built-in; uncomment to override:
+/det/code 17273747172717271727172717271727172717271727172717271727
+
+/run/initialize
+
+# ---------- gun ----------
+/mygun/particle mu-
+/mygun/energy 30 GeV
+/mygun/position 0 0 1 m
+/mygun/direction 0 0 -1
+
+/run/beamOn 1

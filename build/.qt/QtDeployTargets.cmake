@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_geant_plate_FILE /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/build/geant_plate)
+set(__QT_DEPLOY_TARGET_geant_plate_TYPE EXECUTABLE)

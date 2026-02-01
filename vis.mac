@@ -1,0 +1,36 @@
+
+# Make sure geometry is built
+/run/initialize
+
+# Open OpenGL viewer
+/vis/open OGL
+/vis/viewer/set/style surface
+/vis/drawVolume
+
+# World: transparent (alpha ~0.05). Keep it visible.
+/vis/geometry/set/colour WorldLV 1.0 1.0 1.0 0.05
+
+# Lead: gray (opaque)
+/vis/geometry/set/colour PbPlateLV 0.5 0.5 0.5 1.0
+
+# Wide scintillator bars: teal
+/vis/geometry/set/colour WideLayerPV_BarLV 0.0 0.7 0.7 1.0
+
+# Thin scintillator bars: blue
+/vis/geometry/set/colour ThinLayerPV_BarLV 0.0 0.0 1.0 1.0
+
+# Optional: hide the air container logical volumes if they clutter the view.
+# (If you know their names, you can turn them off; otherwise leave this out.)
+# /vis/geometry/set/visibility WideLayerPV_LV 0
+# /vis/geometry/set/visibility ThinLayerPV_LV 0
+
+# Camera helpers
+/vis/scene/add/axes 0 0 0 0.5 m
+/vis/viewer/set/viewpointVector 1 1 1
+/vis/viewer/zoom 1.2
+
+# Optional: don’t draw trajectories if you only care about geometry
+/vis/scene/endOfEventAction accumulate
+
+# Shoot a couple events if you want
+#/run/beamOn 1
