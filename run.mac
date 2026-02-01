@@ -1,5 +1,9 @@
 
 # ---------- geometry (must be before /run/initialize) ----------
+
+
+/det/pbT 3 mm
+
 /det/widePlaneXY 2.16 m
 /det/wideT 1 cm
 /det/widePitch 6 cm
@@ -8,10 +12,18 @@
 /det/thinT 1 cm
 /det/thinPitch 1 cm
 
-/det/pbT 3 mm
+/det/fibrePlaneXY 2.16 m
+/det/fibreLen 2.16 m 
+/det/fibreDiam 1.2 mm
+/det/fibrePitch 1.2 mm
+/det/fibreModuleDz 3.6 mm
+/det/airGap 1 m
+
+
+
 
 # Default (20x "1727") is built-in; uncomment to override:
-/det/code 17273747172717271727172717271727172717271727172717271727
+/det/code 5671727374717273747172737471727374717273747172737471727374717273747172737471727374 
 
 /run/initialize
 
@@ -21,4 +33,4 @@
 /mygun/position 0 0 1 m
 /mygun/direction 0 0 -1
 
-/run/beamOn 1
+/run/beamOn 3

@@ -1,6 +1,9 @@
 
 #include "Wide_layers.hh"
 
+#include "G4VisAttributes.hh"
+#include "G4Colour.hh"
+
 #include "G4Box.hh"
 #include "G4LogicalVolume.hh"
 #include "G4PVPlacement.hh"
@@ -58,4 +61,7 @@ void Wide_layers::PlaceLayer(G4LogicalVolume* mother,
     new G4PVPlacement(nullptr, pos, logicBar,
                       "WideBarPV", logicLayer, false, i, true);
   }
+
+  
+
 }

@@ -235,6 +235,7 @@ CMakeFiles/geant_plate.dir/src/DetectorConstruction.cc.o: \
  /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/Wide_layers.hh \
  /usr/include/Geant4/G4ThreeVector.hh \
  /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/Thin_layers.hh \
+ /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/High_Precision_Fibre_layer.hh \
  /usr/include/Geant4/G4NistManager.hh \
  /usr/include/Geant4/G4ICRU90StoppingData.hh \
  /usr/include/Geant4/G4Material.hh /usr/include/Geant4/G4Element.hh \

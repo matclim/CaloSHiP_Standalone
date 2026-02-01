@@ -4,6 +4,7 @@
 
 #include "Wide_layers.hh"
 #include "Thin_layers.hh"
+#include "High_Precision_Fibre_layer.hh"
 
 #include "G4NistManager.hh"
 #include "G4Material.hh"
@@ -36,6 +37,12 @@ DetectorConstruction::DetectorConstruction()
 , fThinPlaneXY(2.16*m)
 , fThinT(1.0*cm)
 , fThinPitch(1.0*cm)
+, fFibrePlaneXY(2.16*m)
+, fFibreLen(2.16*m)
+, fFibreDiam(1.2*mm)
+, fFibrePitch(1.2*mm)
+, fFibreModuleDz(3.6*mm)
+, fAirGap(1.0*m)
 {
   fMessenger = new DetectorMessenger(this);
 }
@@ -58,11 +65,14 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   // Thin layers: polystyrene as requested
   auto* thinMat = nist->FindOrBuildMaterial("G4_POLYSTYRENE");
 
+  //For fibres
+  auto* polystyrene = nist->FindOrBuildMaterial("G4_POLYSTYRENE");
   // --- Filter code to only valid chars ---
   std::string code;
   code.reserve(fCode.size());
   for (char c : std::string(fCode)) {
-    if (c=='1' || c=='2' || c=='3' || c=='4' || c=='7') code.push_back(c);
+    if (c=='1' || c=='2' || c=='3' || c=='4' || c=='5' || c=='6' || c=='7' || c=='8')
+      code.push_back(c);
   }
 
   // --- Compute total detector thickness along Z ---
@@ -71,10 +81,12 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     if (c=='7') totalZ += fPbT;
     else if (c=='1' || c=='2') totalZ += fWideT;
     else if (c=='3' || c=='4') totalZ += fThinT;
+    else if (c=='5' || c=='6') totalZ += fFibreModuleDz;
+    else if (c=='8') totalZ += fAirGap;
   }
-
   // Choose world size to fit the larger of wide/thin planes
-  const double maxPlaneXY = std::max(fWidePlaneXY, fThinPlaneXY);
+
+  const double maxPlaneXY = std::max(std::max(fWidePlaneXY, fThinPlaneXY), fFibrePlaneXY);
 
   const double marginXY = 1.0*m;
   const double marginZ  = 1.0*m;
@@ -94,20 +106,24 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   // --- Layer builders ---
   Wide_layers wide(fWidePlaneXY, fWideT, fWidePitch);
   Thin_layers thin(fThinPlaneXY, fThinT, fThinPitch);
+  High_Precision_Fibre_layer fibre(fFibrePlaneXY, fFibreLen, fFibreDiam, fFibrePitch, fFibreModuleDz);
 
   // Place stack centered around z = 0
   double zCursor = +totalZ/2;   // current "top surface" of next layer
 
-  int wideLayerCopy = 0;  // copy number for wide layer containers
-  int thinLayerCopy = 0;  // copy number for thin layer containers
+  int globalLayerIndex = 0;  // copy number for wide layer containers
   int pbCopy        = 0;  // copy number for lead plates
 
   for (char c : code) {
-    const double t =
-      (c=='7') ? fPbT :
-      (c=='1' || c=='2') ? fWideT :
-      fThinT;
+    double t = 0.0;
+    if (c=='7') t = fPbT;
+    else if (c=='1' || c=='2') t = fWideT;
+    else if (c=='3' || c=='4') t = fThinT;
+    else if (c=='5' || c=='6') t = fFibreModuleDz;
+    else if (c=='8') t = fAirGap;
 
+    else if (c=='5' || c=='6') t = fFibreModuleDz;
+   
     const double zCenter = zCursor - t/2;
 
     if (c=='7') {
@@ -123,30 +139,43 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     else if (c=='1') {
       wide.PlaceLayer(logicWorld, air, wideMat,
                       "WideLayerPV",
-                      wideLayerCopy++,
+                      globalLayerIndex++,
                       G4ThreeVector(0,0,zCenter),
                       1);
     }
     else if (c=='2') {
       wide.PlaceLayer(logicWorld, air, wideMat,
                       "WideLayerPV",
-                      wideLayerCopy++,
+                      globalLayerIndex++,
                       G4ThreeVector(0,0,zCenter),
                       2);
     }
     else if (c=='3') {
       thin.PlaceLayer(logicWorld, air, thinMat,
                       "ThinLayerPV",
-                      thinLayerCopy++,
+                      globalLayerIndex++,
                       G4ThreeVector(0,0,zCenter),
                       1);
     }
     else if (c=='4') {
       thin.PlaceLayer(logicWorld, air, thinMat,
                       "ThinLayerPV",
-                      thinLayerCopy++,
+                      globalLayerIndex++,
                       G4ThreeVector(0,0,zCenter),
                       2);
+    }
+    else if (c=='5') {
+      fibre.PlaceModule(logicWorld, air, polystyrene,
+                        "FibreLayerPV", globalLayerIndex++,
+                        G4ThreeVector(0,0,zCenter), 1);
+    }
+    else if (c=='6') {
+      fibre.PlaceModule(logicWorld, air, polystyrene,
+                        "FibreLayerPV", globalLayerIndex++,
+                        G4ThreeVector(0,0,zCenter), 2);
+    }
+    else if (c=='8') {
+      // air gap: no placement, just leave empty space
     }
 
     zCursor -= t;

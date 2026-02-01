@@ -30,7 +30,7 @@ int main(int argc, char** argv)
     vis->Initialize();
 
     // Load visualization macro (can also set geometry/gun + a small beamOn)
-    ui->ApplyCommand("/control/execute vis.mac");
+    ui->ApplyCommand("/control/execute ../vis.mac");
     uiExec->SessionStart();
 
     delete vis;

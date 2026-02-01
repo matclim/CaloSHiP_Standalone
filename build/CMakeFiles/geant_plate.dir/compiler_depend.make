@@ -421,6 +421,7 @@ CMakeFiles/geant_plate.dir/src/ActionInitialization.cc.o: /home/matei/SHiP/Softw
 CMakeFiles/geant_plate.dir/src/DetectorConstruction.cc.o: /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/DetectorConstruction.cc \
   /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/DetectorConstruction.hh \
   /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/DetectorMessenger.hh \
+  /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/High_Precision_Fibre_layer.hh \
   /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/Thin_layers.hh \
   /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/Wide_layers.hh \
   /usr/include/CLHEP/Geometry/BasicVector3D.h \
@@ -852,754 +853,6 @@ CMakeFiles/geant_plate.dir/src/DetectorConstruction.cc.o: /home/matei/SHiP/Softw
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
 
-CMakeFiles/geant_plate.dir/src/DetectorMessenger.cc.o: /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/DetectorMessenger.cc \
-  /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/DetectorConstruction.hh \
-  /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/DetectorMessenger.hh \
-  /usr/include/CLHEP/Vector/ThreeVector.h \
-  /usr/include/CLHEP/Vector/ThreeVector.icc \
-  /usr/include/CLHEP/Vector/defs.h \
-  /usr/include/Geant4/G4ApplicationState.hh \
-  /usr/include/Geant4/G4EnvironmentUtils.hh \
-  /usr/include/Geant4/G4Exception.hh \
-  /usr/include/Geant4/G4ExceptionSeverity.hh \
-  /usr/include/Geant4/G4GlobalConfig.hh \
-  /usr/include/Geant4/G4String.hh \
-  /usr/include/Geant4/G4String.icc \
-  /usr/include/Geant4/G4ThreeVector.hh \
-  /usr/include/Geant4/G4Types.hh \
-  /usr/include/Geant4/G4UIcmdWithADoubleAndUnit.hh \
-  /usr/include/Geant4/G4UIcmdWithAString.hh \
-  /usr/include/Geant4/G4UIcommand.hh \
-  /usr/include/Geant4/G4UIdirectory.hh \
-  /usr/include/Geant4/G4UImessenger.hh \
-  /usr/include/Geant4/G4UIparameter.hh \
-  /usr/include/Geant4/G4VUserDetectorConstruction.hh \
-  /usr/include/Geant4/G4ios.hh \
-  /usr/include/Geant4/globals.hh \
-  /usr/include/Geant4/templates.hh \
-  /usr/include/Geant4/tls.hh \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/asm/bitsperlong.h \
-  /usr/include/asm/errno.h \
-  /usr/include/asm/posix_types.h \
-  /usr/include/asm/posix_types_64.h \
-  /usr/include/asm/types.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/cpu-set.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/errno.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/flt-eval-method.h \
-  /usr/include/bits/fp-fast.h \
-  /usr/include/bits/fp-logb.h \
-  /usr/include/bits/iscanonical.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/libm-simd-decl-stubs.h \
-  /usr/include/bits/local_lim.h \
-  /usr/include/bits/locale.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/math-vector.h \
-  /usr/include/bits/mathcalls-helper-functions.h \
-  /usr/include/bits/mathcalls-macros.h \
-  /usr/include/bits/mathcalls-narrow.h \
-  /usr/include/bits/mathcalls.h \
-  /usr/include/bits/posix1_lim.h \
-  /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/pthread_stack_min-dynamic.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/sched.h \
-  /usr/include/bits/select-decl.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/select2.h \
-  /usr/include/bits/setjmp.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-least.h \
-  /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio.h \
-  /usr/include/bits/stdio2-decl.h \
-  /usr/include/bits/stdio2.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-bsearch.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/stdlib.h \
-  /usr/include/bits/string_fortified.h \
-  /usr/include/bits/strings_fortified.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/timex.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/error_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/bits/types/struct_itimerspec.h \
-  /usr/include/bits/types/struct_sched_param.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/struct_tm.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/types/wint_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/uio_lim.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wchar2-decl.h \
-  /usr/include/bits/wchar2.h \
-  /usr/include/bits/wctype-wchar.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/bits/xopen_lim.h \
-  /usr/include/c++/15.2.1/algorithm \
-  /usr/include/c++/15.2.1/backward/binders.h \
-  /usr/include/c++/15.2.1/bit \
-  /usr/include/c++/15.2.1/bits/algorithmfwd.h \
-  /usr/include/c++/15.2.1/bits/alloc_traits.h \
-  /usr/include/c++/15.2.1/bits/allocator.h \
-  /usr/include/c++/15.2.1/bits/basic_ios.h \
-  /usr/include/c++/15.2.1/bits/basic_ios.tcc \
-  /usr/include/c++/15.2.1/bits/basic_string.h \
-  /usr/include/c++/15.2.1/bits/basic_string.tcc \
-  /usr/include/c++/15.2.1/bits/char_traits.h \
-  /usr/include/c++/15.2.1/bits/charconv.h \
-  /usr/include/c++/15.2.1/bits/chrono.h \
-  /usr/include/c++/15.2.1/bits/codecvt.h \
-  /usr/include/c++/15.2.1/bits/concept_check.h \
-  /usr/include/c++/15.2.1/bits/cpp_type_traits.h \
-  /usr/include/c++/15.2.1/bits/cxxabi_forced.h \
-  /usr/include/c++/15.2.1/bits/cxxabi_init_exception.h \
-  /usr/include/c++/15.2.1/bits/erase_if.h \
-  /usr/include/c++/15.2.1/bits/exception.h \
-  /usr/include/c++/15.2.1/bits/exception_defines.h \
-  /usr/include/c++/15.2.1/bits/exception_ptr.h \
-  /usr/include/c++/15.2.1/bits/functexcept.h \
-  /usr/include/c++/15.2.1/bits/functional_hash.h \
-  /usr/include/c++/15.2.1/bits/hash_bytes.h \
-  /usr/include/c++/15.2.1/bits/invoke.h \
-  /usr/include/c++/15.2.1/bits/ios_base.h \
-  /usr/include/c++/15.2.1/bits/istream.tcc \
-  /usr/include/c++/15.2.1/bits/locale_classes.h \
-  /usr/include/c++/15.2.1/bits/locale_classes.tcc \
-  /usr/include/c++/15.2.1/bits/locale_conv.h \
-  /usr/include/c++/15.2.1/bits/locale_facets.h \
-  /usr/include/c++/15.2.1/bits/locale_facets.tcc \
-  /usr/include/c++/15.2.1/bits/locale_facets_nonio.h \
-  /usr/include/c++/15.2.1/bits/locale_facets_nonio.tcc \
-  /usr/include/c++/15.2.1/bits/localefwd.h \
-  /usr/include/c++/15.2.1/bits/memory_resource.h \
-  /usr/include/c++/15.2.1/bits/memoryfwd.h \
-  /usr/include/c++/15.2.1/bits/move.h \
-  /usr/include/c++/15.2.1/bits/nested_exception.h \
-  /usr/include/c++/15.2.1/bits/new_allocator.h \
-  /usr/include/c++/15.2.1/bits/node_handle.h \
-  /usr/include/c++/15.2.1/bits/ostream.h \
-  /usr/include/c++/15.2.1/bits/ostream.tcc \
-  /usr/include/c++/15.2.1/bits/ostream_insert.h \
-  /usr/include/c++/15.2.1/bits/parse_numbers.h \
-  /usr/include/c++/15.2.1/bits/postypes.h \
-  /usr/include/c++/15.2.1/bits/predefined_ops.h \
-  /usr/include/c++/15.2.1/bits/ptr_traits.h \
-  /usr/include/c++/15.2.1/bits/quoted_string.h \
-  /usr/include/c++/15.2.1/bits/range_access.h \
-  /usr/include/c++/15.2.1/bits/refwrap.h \
-  /usr/include/c++/15.2.1/bits/requires_hosted.h \
-  /usr/include/c++/15.2.1/bits/specfun.h \
-  /usr/include/c++/15.2.1/bits/sstream.tcc \
-  /usr/include/c++/15.2.1/bits/std_abs.h \
-  /usr/include/c++/15.2.1/bits/std_mutex.h \
-  /usr/include/c++/15.2.1/bits/stl_algo.h \
-  /usr/include/c++/15.2.1/bits/stl_algobase.h \
-  /usr/include/c++/15.2.1/bits/stl_bvector.h \
-  /usr/include/c++/15.2.1/bits/stl_construct.h \
-  /usr/include/c++/15.2.1/bits/stl_function.h \
-  /usr/include/c++/15.2.1/bits/stl_heap.h \
-  /usr/include/c++/15.2.1/bits/stl_iterator.h \
-  /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h \
-  /usr/include/c++/15.2.1/bits/stl_map.h \
-  /usr/include/c++/15.2.1/bits/stl_multimap.h \
-  /usr/include/c++/15.2.1/bits/stl_pair.h \
-  /usr/include/c++/15.2.1/bits/stl_tempbuf.h \
-  /usr/include/c++/15.2.1/bits/stl_tree.h \
-  /usr/include/c++/15.2.1/bits/stl_uninitialized.h \
-  /usr/include/c++/15.2.1/bits/stl_vector.h \
-  /usr/include/c++/15.2.1/bits/streambuf.tcc \
-  /usr/include/c++/15.2.1/bits/streambuf_iterator.h \
-  /usr/include/c++/15.2.1/bits/string_view.tcc \
-  /usr/include/c++/15.2.1/bits/stringfwd.h \
-  /usr/include/c++/15.2.1/bits/uniform_int_dist.h \
-  /usr/include/c++/15.2.1/bits/unique_lock.h \
-  /usr/include/c++/15.2.1/bits/uses_allocator.h \
-  /usr/include/c++/15.2.1/bits/uses_allocator_args.h \
-  /usr/include/c++/15.2.1/bits/utility.h \
-  /usr/include/c++/15.2.1/bits/vector.tcc \
-  /usr/include/c++/15.2.1/bits/version.h \
-  /usr/include/c++/15.2.1/cctype \
-  /usr/include/c++/15.2.1/cerrno \
-  /usr/include/c++/15.2.1/climits \
-  /usr/include/c++/15.2.1/clocale \
-  /usr/include/c++/15.2.1/cmath \
-  /usr/include/c++/15.2.1/complex \
-  /usr/include/c++/15.2.1/concepts \
-  /usr/include/c++/15.2.1/cstddef \
-  /usr/include/c++/15.2.1/cstdint \
-  /usr/include/c++/15.2.1/cstdio \
-  /usr/include/c++/15.2.1/cstdlib \
-  /usr/include/c++/15.2.1/cstring \
-  /usr/include/c++/15.2.1/ctime \
-  /usr/include/c++/15.2.1/cwchar \
-  /usr/include/c++/15.2.1/cwctype \
-  /usr/include/c++/15.2.1/debug/assertions.h \
-  /usr/include/c++/15.2.1/debug/debug.h \
-  /usr/include/c++/15.2.1/exception \
-  /usr/include/c++/15.2.1/ext/aligned_buffer.h \
-  /usr/include/c++/15.2.1/ext/alloc_traits.h \
-  /usr/include/c++/15.2.1/ext/atomicity.h \
-  /usr/include/c++/15.2.1/ext/numeric_traits.h \
-  /usr/include/c++/15.2.1/ext/string_conversions.h \
-  /usr/include/c++/15.2.1/ext/type_traits.h \
-  /usr/include/c++/15.2.1/initializer_list \
-  /usr/include/c++/15.2.1/iomanip \
-  /usr/include/c++/15.2.1/ios \
-  /usr/include/c++/15.2.1/iosfwd \
-  /usr/include/c++/15.2.1/iostream \
-  /usr/include/c++/15.2.1/istream \
-  /usr/include/c++/15.2.1/limits \
-  /usr/include/c++/15.2.1/locale \
-  /usr/include/c++/15.2.1/map \
-  /usr/include/c++/15.2.1/mutex \
-  /usr/include/c++/15.2.1/new \
-  /usr/include/c++/15.2.1/ostream \
-  /usr/include/c++/15.2.1/pstl/execution_defs.h \
-  /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/15.2.1/pstl/pstl_config.h \
-  /usr/include/c++/15.2.1/ratio \
-  /usr/include/c++/15.2.1/sstream \
-  /usr/include/c++/15.2.1/stdexcept \
-  /usr/include/c++/15.2.1/streambuf \
-  /usr/include/c++/15.2.1/string \
-  /usr/include/c++/15.2.1/string_view \
-  /usr/include/c++/15.2.1/system_error \
-  /usr/include/c++/15.2.1/tr1/bessel_function.tcc \
-  /usr/include/c++/15.2.1/tr1/beta_function.tcc \
-  /usr/include/c++/15.2.1/tr1/ell_integral.tcc \
-  /usr/include/c++/15.2.1/tr1/exp_integral.tcc \
-  /usr/include/c++/15.2.1/tr1/gamma.tcc \
-  /usr/include/c++/15.2.1/tr1/hypergeometric.tcc \
-  /usr/include/c++/15.2.1/tr1/legendre_function.tcc \
-  /usr/include/c++/15.2.1/tr1/modified_bessel_func.tcc \
-  /usr/include/c++/15.2.1/tr1/poly_hermite.tcc \
-  /usr/include/c++/15.2.1/tr1/poly_laguerre.tcc \
-  /usr/include/c++/15.2.1/tr1/riemann_zeta.tcc \
-  /usr/include/c++/15.2.1/tr1/special_function_util.h \
-  /usr/include/c++/15.2.1/tuple \
-  /usr/include/c++/15.2.1/type_traits \
-  /usr/include/c++/15.2.1/typeinfo \
-  /usr/include/c++/15.2.1/vector \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/error_constants.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/messages_members.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/time_members.h \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/gnu/stubs-64.h \
-  /usr/include/gnu/stubs.h \
-  /usr/include/libintl.h \
-  /usr/include/limits.h \
-  /usr/include/linux/errno.h \
-  /usr/include/linux/limits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/sched/types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/linux/types.h \
-  /usr/include/locale.h \
-  /usr/include/math.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/sys/cdefs.h \
-  /usr/include/sys/select.h \
-  /usr/include/sys/single_threaded.h \
-  /usr/include/sys/types.h \
-  /usr/include/time.h \
-  /usr/include/wchar.h \
-  /usr/include/wctype.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
-
-CMakeFiles/geant_plate.dir/src/EventAction.cc.o: /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/EventAction.cc \
-  /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/EventAction.hh \
-  /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/RootIO.hh \
-  /usr/include/Bytes.h \
-  /usr/include/Byteswap.h \
-  /usr/include/CLHEP/Vector/ThreeVector.h \
-  /usr/include/CLHEP/Vector/ThreeVector.icc \
-  /usr/include/CLHEP/Vector/defs.h \
-  /usr/include/Compression.h \
-  /usr/include/DllImport.h \
-  /usr/include/ESTLType.h \
-  /usr/include/Geant4/G4Allocator.hh \
-  /usr/include/Geant4/G4AllocatorPool.hh \
-  /usr/include/Geant4/G4DCofThisEvent.hh \
-  /usr/include/Geant4/G4EnvironmentUtils.hh \
-  /usr/include/Geant4/G4Event.hh \
-  /usr/include/Geant4/G4Exception.hh \
-  /usr/include/Geant4/G4ExceptionSeverity.hh \
-  /usr/include/Geant4/G4GlobalConfig.hh \
-  /usr/include/Geant4/G4HCofThisEvent.hh \
-  /usr/include/Geant4/G4PrimaryParticle.hh \
-  /usr/include/Geant4/G4PrimaryVertex.hh \
-  /usr/include/Geant4/G4String.hh \
-  /usr/include/Geant4/G4String.icc \
-  /usr/include/Geant4/G4ThreeVector.hh \
-  /usr/include/Geant4/G4TrajectoryContainer.hh \
-  /usr/include/Geant4/G4Types.hh \
-  /usr/include/Geant4/G4UserEventAction.hh \
-  /usr/include/Geant4/G4VDigiCollection.hh \
-  /usr/include/Geant4/G4VHitsCollection.hh \
-  /usr/include/Geant4/G4VTrajectory.hh \
-  /usr/include/Geant4/G4VUserEventInformation.hh \
-  /usr/include/Geant4/G4ios.hh \
-  /usr/include/Geant4/evtdefs.hh \
-  /usr/include/Geant4/globals.hh \
-  /usr/include/Geant4/pwdefs.hh \
-  /usr/include/Geant4/templates.hh \
-  /usr/include/Geant4/tls.hh \
-  /usr/include/RConfigure.h \
-  /usr/include/ROOT/RConcurrentHashColl.hxx \
-  /usr/include/ROOT/RConfig.hxx \
-  /usr/include/ROOT/RRangeCast.hxx \
-  /usr/include/ROOT/RSpan.hxx \
-  /usr/include/ROOT/RVersion.hxx \
-  /usr/include/ROOT/TIOFeatures.hxx \
-  /usr/include/ROOT/TRWSpinLock.hxx \
-  /usr/include/ROOT/TSpinMutex.hxx \
-  /usr/include/ROOT/TypeTraits.hxx \
-  /usr/include/ROOT/span.hxx \
-  /usr/include/RVersion.h \
-  /usr/include/Rtypes.h \
-  /usr/include/RtypesCore.h \
-  /usr/include/TArray.h \
-  /usr/include/TArrayD.h \
-  /usr/include/TArrayI.h \
-  /usr/include/TAttFill.h \
-  /usr/include/TAttLine.h \
-  /usr/include/TAttMarker.h \
-  /usr/include/TBits.h \
-  /usr/include/TBranch.h \
-  /usr/include/TBranchCacheInfo.h \
-  /usr/include/TBuffer.h \
-  /usr/include/TClass.h \
-  /usr/include/TCollection.h \
-  /usr/include/TDataType.h \
-  /usr/include/TDatime.h \
-  /usr/include/TDictionary.h \
-  /usr/include/TDirectory.h \
-  /usr/include/TDirectoryFile.h \
-  /usr/include/TFile.h \
-  /usr/include/TGenericClassInfo.h \
-  /usr/include/TIsAProxy.h \
-  /usr/include/TIterator.h \
-  /usr/include/TList.h \
-  /usr/include/TNamed.h \
-  /usr/include/TObjArray.h \
-  /usr/include/TObject.h \
-  /usr/include/TSchemaHelper.h \
-  /usr/include/TSchemaRule.h \
-  /usr/include/TSeqCollection.h \
-  /usr/include/TStorage.h \
-  /usr/include/TString.h \
-  /usr/include/TTree.h \
-  /usr/include/TUUID.h \
-  /usr/include/TUrl.h \
-  /usr/include/TVersionCheck.h \
-  /usr/include/TVirtualIsAProxy.h \
-  /usr/include/TVirtualMutex.h \
-  /usr/include/TVirtualRWMutex.h \
-  /usr/include/TVirtualTreePlayer.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/asm/bitsperlong.h \
-  /usr/include/asm/errno.h \
-  /usr/include/asm/posix_types.h \
-  /usr/include/asm/posix_types_64.h \
-  /usr/include/asm/types.h \
-  /usr/include/assert.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/cpu-set.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/errno.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/flt-eval-method.h \
-  /usr/include/bits/fp-fast.h \
-  /usr/include/bits/fp-logb.h \
-  /usr/include/bits/iscanonical.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/libm-simd-decl-stubs.h \
-  /usr/include/bits/local_lim.h \
-  /usr/include/bits/locale.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/math-vector.h \
-  /usr/include/bits/mathcalls-helper-functions.h \
-  /usr/include/bits/mathcalls-macros.h \
-  /usr/include/bits/mathcalls-narrow.h \
-  /usr/include/bits/mathcalls.h \
-  /usr/include/bits/posix1_lim.h \
-  /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/pthread_stack_min-dynamic.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/sched.h \
-  /usr/include/bits/select-decl.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/select2.h \
-  /usr/include/bits/setjmp.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-least.h \
-  /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio.h \
-  /usr/include/bits/stdio2-decl.h \
-  /usr/include/bits/stdio2.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-bsearch.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/stdlib.h \
-  /usr/include/bits/string_fortified.h \
-  /usr/include/bits/strings_fortified.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/timex.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/error_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/bits/types/struct_itimerspec.h \
-  /usr/include/bits/types/struct_sched_param.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/struct_tm.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/types/wint_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/uio_lim.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wchar2-decl.h \
-  /usr/include/bits/wchar2.h \
-  /usr/include/bits/wctype-wchar.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/bits/xopen_lim.h \
-  /usr/include/c++/15.2.1/algorithm \
-  /usr/include/c++/15.2.1/array \
-  /usr/include/c++/15.2.1/atomic \
-  /usr/include/c++/15.2.1/backward/auto_ptr.h \
-  /usr/include/c++/15.2.1/backward/binders.h \
-  /usr/include/c++/15.2.1/bit \
-  /usr/include/c++/15.2.1/bits/algorithmfwd.h \
-  /usr/include/c++/15.2.1/bits/align.h \
-  /usr/include/c++/15.2.1/bits/alloc_traits.h \
-  /usr/include/c++/15.2.1/bits/allocated_ptr.h \
-  /usr/include/c++/15.2.1/bits/allocator.h \
-  /usr/include/c++/15.2.1/bits/atomic_base.h \
-  /usr/include/c++/15.2.1/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/15.2.1/bits/basic_ios.h \
-  /usr/include/c++/15.2.1/bits/basic_ios.tcc \
-  /usr/include/c++/15.2.1/bits/basic_string.h \
-  /usr/include/c++/15.2.1/bits/basic_string.tcc \
-  /usr/include/c++/15.2.1/bits/char_traits.h \
-  /usr/include/c++/15.2.1/bits/charconv.h \
-  /usr/include/c++/15.2.1/bits/chrono.h \
-  /usr/include/c++/15.2.1/bits/codecvt.h \
-  /usr/include/c++/15.2.1/bits/concept_check.h \
-  /usr/include/c++/15.2.1/bits/cpp_type_traits.h \
-  /usr/include/c++/15.2.1/bits/cxxabi_forced.h \
-  /usr/include/c++/15.2.1/bits/cxxabi_init_exception.h \
-  /usr/include/c++/15.2.1/bits/enable_special_members.h \
-  /usr/include/c++/15.2.1/bits/erase_if.h \
-  /usr/include/c++/15.2.1/bits/exception.h \
-  /usr/include/c++/15.2.1/bits/exception_defines.h \
-  /usr/include/c++/15.2.1/bits/exception_ptr.h \
-  /usr/include/c++/15.2.1/bits/functexcept.h \
-  /usr/include/c++/15.2.1/bits/functional_hash.h \
-  /usr/include/c++/15.2.1/bits/hash_bytes.h \
-  /usr/include/c++/15.2.1/bits/hashtable.h \
-  /usr/include/c++/15.2.1/bits/hashtable_policy.h \
-  /usr/include/c++/15.2.1/bits/invoke.h \
-  /usr/include/c++/15.2.1/bits/ios_base.h \
-  /usr/include/c++/15.2.1/bits/istream.tcc \
-  /usr/include/c++/15.2.1/bits/locale_classes.h \
-  /usr/include/c++/15.2.1/bits/locale_classes.tcc \
-  /usr/include/c++/15.2.1/bits/locale_conv.h \
-  /usr/include/c++/15.2.1/bits/locale_facets.h \
-  /usr/include/c++/15.2.1/bits/locale_facets.tcc \
-  /usr/include/c++/15.2.1/bits/locale_facets_nonio.h \
-  /usr/include/c++/15.2.1/bits/locale_facets_nonio.tcc \
-  /usr/include/c++/15.2.1/bits/localefwd.h \
-  /usr/include/c++/15.2.1/bits/memory_resource.h \
-  /usr/include/c++/15.2.1/bits/memoryfwd.h \
-  /usr/include/c++/15.2.1/bits/move.h \
-  /usr/include/c++/15.2.1/bits/nested_exception.h \
-  /usr/include/c++/15.2.1/bits/new_allocator.h \
-  /usr/include/c++/15.2.1/bits/node_handle.h \
-  /usr/include/c++/15.2.1/bits/ostream.h \
-  /usr/include/c++/15.2.1/bits/ostream.tcc \
-  /usr/include/c++/15.2.1/bits/ostream_insert.h \
-  /usr/include/c++/15.2.1/bits/parse_numbers.h \
-  /usr/include/c++/15.2.1/bits/postypes.h \
-  /usr/include/c++/15.2.1/bits/predefined_ops.h \
-  /usr/include/c++/15.2.1/bits/ptr_traits.h \
-  /usr/include/c++/15.2.1/bits/quoted_string.h \
-  /usr/include/c++/15.2.1/bits/range_access.h \
-  /usr/include/c++/15.2.1/bits/refwrap.h \
-  /usr/include/c++/15.2.1/bits/requires_hosted.h \
-  /usr/include/c++/15.2.1/bits/shared_ptr.h \
-  /usr/include/c++/15.2.1/bits/shared_ptr_atomic.h \
-  /usr/include/c++/15.2.1/bits/shared_ptr_base.h \
-  /usr/include/c++/15.2.1/bits/specfun.h \
-  /usr/include/c++/15.2.1/bits/sstream.tcc \
-  /usr/include/c++/15.2.1/bits/std_abs.h \
-  /usr/include/c++/15.2.1/bits/std_function.h \
-  /usr/include/c++/15.2.1/bits/std_mutex.h \
-  /usr/include/c++/15.2.1/bits/stl_algo.h \
-  /usr/include/c++/15.2.1/bits/stl_algobase.h \
-  /usr/include/c++/15.2.1/bits/stl_bvector.h \
-  /usr/include/c++/15.2.1/bits/stl_construct.h \
-  /usr/include/c++/15.2.1/bits/stl_function.h \
-  /usr/include/c++/15.2.1/bits/stl_heap.h \
-  /usr/include/c++/15.2.1/bits/stl_iterator.h \
-  /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h \
-  /usr/include/c++/15.2.1/bits/stl_map.h \
-  /usr/include/c++/15.2.1/bits/stl_multimap.h \
-  /usr/include/c++/15.2.1/bits/stl_multiset.h \
-  /usr/include/c++/15.2.1/bits/stl_pair.h \
-  /usr/include/c++/15.2.1/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/15.2.1/bits/stl_relops.h \
-  /usr/include/c++/15.2.1/bits/stl_set.h \
-  /usr/include/c++/15.2.1/bits/stl_tempbuf.h \
-  /usr/include/c++/15.2.1/bits/stl_tree.h \
-  /usr/include/c++/15.2.1/bits/stl_uninitialized.h \
-  /usr/include/c++/15.2.1/bits/stl_vector.h \
-  /usr/include/c++/15.2.1/bits/stream_iterator.h \
-  /usr/include/c++/15.2.1/bits/streambuf.tcc \
-  /usr/include/c++/15.2.1/bits/streambuf_iterator.h \
-  /usr/include/c++/15.2.1/bits/string_view.tcc \
-  /usr/include/c++/15.2.1/bits/stringfwd.h \
-  /usr/include/c++/15.2.1/bits/uniform_int_dist.h \
-  /usr/include/c++/15.2.1/bits/unique_lock.h \
-  /usr/include/c++/15.2.1/bits/unique_ptr.h \
-  /usr/include/c++/15.2.1/bits/unordered_map.h \
-  /usr/include/c++/15.2.1/bits/unordered_set.h \
-  /usr/include/c++/15.2.1/bits/uses_allocator.h \
-  /usr/include/c++/15.2.1/bits/uses_allocator_args.h \
-  /usr/include/c++/15.2.1/bits/utility.h \
-  /usr/include/c++/15.2.1/bits/vector.tcc \
-  /usr/include/c++/15.2.1/bits/version.h \
-  /usr/include/c++/15.2.1/cassert \
-  /usr/include/c++/15.2.1/cctype \
-  /usr/include/c++/15.2.1/cerrno \
-  /usr/include/c++/15.2.1/climits \
-  /usr/include/c++/15.2.1/clocale \
-  /usr/include/c++/15.2.1/cmath \
-  /usr/include/c++/15.2.1/compare \
-  /usr/include/c++/15.2.1/complex \
-  /usr/include/c++/15.2.1/concepts \
-  /usr/include/c++/15.2.1/condition_variable \
-  /usr/include/c++/15.2.1/cstdarg \
-  /usr/include/c++/15.2.1/cstddef \
-  /usr/include/c++/15.2.1/cstdint \
-  /usr/include/c++/15.2.1/cstdio \
-  /usr/include/c++/15.2.1/cstdlib \
-  /usr/include/c++/15.2.1/cstring \
-  /usr/include/c++/15.2.1/ctime \
-  /usr/include/c++/15.2.1/cwchar \
-  /usr/include/c++/15.2.1/cwctype \
-  /usr/include/c++/15.2.1/debug/assertions.h \
-  /usr/include/c++/15.2.1/debug/debug.h \
-  /usr/include/c++/15.2.1/exception \
-  /usr/include/c++/15.2.1/ext/aligned_buffer.h \
-  /usr/include/c++/15.2.1/ext/alloc_traits.h \
-  /usr/include/c++/15.2.1/ext/atomicity.h \
-  /usr/include/c++/15.2.1/ext/concurrence.h \
-  /usr/include/c++/15.2.1/ext/numeric_traits.h \
-  /usr/include/c++/15.2.1/ext/string_conversions.h \
-  /usr/include/c++/15.2.1/ext/type_traits.h \
-  /usr/include/c++/15.2.1/functional \
-  /usr/include/c++/15.2.1/initializer_list \
-  /usr/include/c++/15.2.1/iomanip \
-  /usr/include/c++/15.2.1/ios \
-  /usr/include/c++/15.2.1/iosfwd \
-  /usr/include/c++/15.2.1/iostream \
-  /usr/include/c++/15.2.1/istream \
-  /usr/include/c++/15.2.1/iterator \
-  /usr/include/c++/15.2.1/limits \
-  /usr/include/c++/15.2.1/locale \
-  /usr/include/c++/15.2.1/map \
-  /usr/include/c++/15.2.1/memory \
-  /usr/include/c++/15.2.1/mutex \
-  /usr/include/c++/15.2.1/new \
-  /usr/include/c++/15.2.1/optional \
-  /usr/include/c++/15.2.1/ostream \
-  /usr/include/c++/15.2.1/pstl/execution_defs.h \
-  /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/15.2.1/pstl/glue_memory_defs.h \
-  /usr/include/c++/15.2.1/pstl/pstl_config.h \
-  /usr/include/c++/15.2.1/ratio \
-  /usr/include/c++/15.2.1/set \
-  /usr/include/c++/15.2.1/sstream \
-  /usr/include/c++/15.2.1/stdexcept \
-  /usr/include/c++/15.2.1/streambuf \
-  /usr/include/c++/15.2.1/string \
-  /usr/include/c++/15.2.1/string_view \
-  /usr/include/c++/15.2.1/system_error \
-  /usr/include/c++/15.2.1/tr1/bessel_function.tcc \
-  /usr/include/c++/15.2.1/tr1/beta_function.tcc \
-  /usr/include/c++/15.2.1/tr1/ell_integral.tcc \
-  /usr/include/c++/15.2.1/tr1/exp_integral.tcc \
-  /usr/include/c++/15.2.1/tr1/gamma.tcc \
-  /usr/include/c++/15.2.1/tr1/hypergeometric.tcc \
-  /usr/include/c++/15.2.1/tr1/legendre_function.tcc \
-  /usr/include/c++/15.2.1/tr1/modified_bessel_func.tcc \
-  /usr/include/c++/15.2.1/tr1/poly_hermite.tcc \
-  /usr/include/c++/15.2.1/tr1/poly_laguerre.tcc \
-  /usr/include/c++/15.2.1/tr1/riemann_zeta.tcc \
-  /usr/include/c++/15.2.1/tr1/special_function_util.h \
-  /usr/include/c++/15.2.1/tuple \
-  /usr/include/c++/15.2.1/type_traits \
-  /usr/include/c++/15.2.1/typeinfo \
-  /usr/include/c++/15.2.1/unordered_map \
-  /usr/include/c++/15.2.1/unordered_set \
-  /usr/include/c++/15.2.1/utility \
-  /usr/include/c++/15.2.1/vector \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/error_constants.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/messages_members.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/time_members.h \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/gnu/stubs-64.h \
-  /usr/include/gnu/stubs.h \
-  /usr/include/libintl.h \
-  /usr/include/limits.h \
-  /usr/include/linux/errno.h \
-  /usr/include/linux/limits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/sched/types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/linux/types.h \
-  /usr/include/locale.h \
-  /usr/include/math.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/snprintf.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/strlcpy.h \
-  /usr/include/strtok.h \
-  /usr/include/sys/cdefs.h \
-  /usr/include/sys/select.h \
-  /usr/include/sys/single_threaded.h \
-  /usr/include/sys/types.h \
-  /usr/include/time.h \
-  /usr/include/wchar.h \
-  /usr/include/wctype.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
-
 CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o: /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/PrimaryGeneratorAction.cc \
   /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/PrimaryGeneratorAction.hh \
   /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/PrimaryGeneratorMessenger.hh \
@@ -1927,2378 +1180,6 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o: /home/matei/SHiP/Sof
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/error_constants.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/messages_members.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/time_members.h \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/gnu/stubs-64.h \
-  /usr/include/gnu/stubs.h \
-  /usr/include/libintl.h \
-  /usr/include/limits.h \
-  /usr/include/linux/errno.h \
-  /usr/include/linux/limits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/sched/types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/linux/types.h \
-  /usr/include/locale.h \
-  /usr/include/math.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/sys/cdefs.h \
-  /usr/include/sys/select.h \
-  /usr/include/sys/single_threaded.h \
-  /usr/include/sys/types.h \
-  /usr/include/time.h \
-  /usr/include/wchar.h \
-  /usr/include/wctype.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
-
-CMakeFiles/geant_plate.dir/src/PrimaryGeneratorMessenger.cc.o: /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/PrimaryGeneratorMessenger.cc \
-  /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/PrimaryGeneratorAction.hh \
-  /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/PrimaryGeneratorMessenger.hh \
-  /usr/include/CLHEP/Vector/ThreeVector.h \
-  /usr/include/CLHEP/Vector/ThreeVector.icc \
-  /usr/include/CLHEP/Vector/defs.h \
-  /usr/include/Geant4/G4ApplicationState.hh \
-  /usr/include/Geant4/G4EnvironmentUtils.hh \
-  /usr/include/Geant4/G4Exception.hh \
-  /usr/include/Geant4/G4ExceptionSeverity.hh \
-  /usr/include/Geant4/G4GlobalConfig.hh \
-  /usr/include/Geant4/G4String.hh \
-  /usr/include/Geant4/G4String.icc \
-  /usr/include/Geant4/G4ThreeVector.hh \
-  /usr/include/Geant4/G4Types.hh \
-  /usr/include/Geant4/G4UIcmdWith3Vector.hh \
-  /usr/include/Geant4/G4UIcmdWith3VectorAndUnit.hh \
-  /usr/include/Geant4/G4UIcmdWithADoubleAndUnit.hh \
-  /usr/include/Geant4/G4UIcmdWithAString.hh \
-  /usr/include/Geant4/G4UIcommand.hh \
-  /usr/include/Geant4/G4UIdirectory.hh \
-  /usr/include/Geant4/G4UImessenger.hh \
-  /usr/include/Geant4/G4UIparameter.hh \
-  /usr/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
-  /usr/include/Geant4/G4ios.hh \
-  /usr/include/Geant4/globals.hh \
-  /usr/include/Geant4/templates.hh \
-  /usr/include/Geant4/tls.hh \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/asm/bitsperlong.h \
-  /usr/include/asm/errno.h \
-  /usr/include/asm/posix_types.h \
-  /usr/include/asm/posix_types_64.h \
-  /usr/include/asm/types.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/cpu-set.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/errno.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/flt-eval-method.h \
-  /usr/include/bits/fp-fast.h \
-  /usr/include/bits/fp-logb.h \
-  /usr/include/bits/iscanonical.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/libm-simd-decl-stubs.h \
-  /usr/include/bits/local_lim.h \
-  /usr/include/bits/locale.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/math-vector.h \
-  /usr/include/bits/mathcalls-helper-functions.h \
-  /usr/include/bits/mathcalls-macros.h \
-  /usr/include/bits/mathcalls-narrow.h \
-  /usr/include/bits/mathcalls.h \
-  /usr/include/bits/posix1_lim.h \
-  /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/pthread_stack_min-dynamic.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/sched.h \
-  /usr/include/bits/select-decl.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/select2.h \
-  /usr/include/bits/setjmp.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-least.h \
-  /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio.h \
-  /usr/include/bits/stdio2-decl.h \
-  /usr/include/bits/stdio2.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-bsearch.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/stdlib.h \
-  /usr/include/bits/string_fortified.h \
-  /usr/include/bits/strings_fortified.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/timex.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/error_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/bits/types/struct_itimerspec.h \
-  /usr/include/bits/types/struct_sched_param.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/struct_tm.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/types/wint_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/uio_lim.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wchar2-decl.h \
-  /usr/include/bits/wchar2.h \
-  /usr/include/bits/wctype-wchar.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/bits/xopen_lim.h \
-  /usr/include/c++/15.2.1/algorithm \
-  /usr/include/c++/15.2.1/backward/binders.h \
-  /usr/include/c++/15.2.1/bit \
-  /usr/include/c++/15.2.1/bits/algorithmfwd.h \
-  /usr/include/c++/15.2.1/bits/alloc_traits.h \
-  /usr/include/c++/15.2.1/bits/allocator.h \
-  /usr/include/c++/15.2.1/bits/basic_ios.h \
-  /usr/include/c++/15.2.1/bits/basic_ios.tcc \
-  /usr/include/c++/15.2.1/bits/basic_string.h \
-  /usr/include/c++/15.2.1/bits/basic_string.tcc \
-  /usr/include/c++/15.2.1/bits/char_traits.h \
-  /usr/include/c++/15.2.1/bits/charconv.h \
-  /usr/include/c++/15.2.1/bits/chrono.h \
-  /usr/include/c++/15.2.1/bits/codecvt.h \
-  /usr/include/c++/15.2.1/bits/concept_check.h \
-  /usr/include/c++/15.2.1/bits/cpp_type_traits.h \
-  /usr/include/c++/15.2.1/bits/cxxabi_forced.h \
-  /usr/include/c++/15.2.1/bits/cxxabi_init_exception.h \
-  /usr/include/c++/15.2.1/bits/erase_if.h \
-  /usr/include/c++/15.2.1/bits/exception.h \
-  /usr/include/c++/15.2.1/bits/exception_defines.h \
-  /usr/include/c++/15.2.1/bits/exception_ptr.h \
-  /usr/include/c++/15.2.1/bits/functexcept.h \
-  /usr/include/c++/15.2.1/bits/functional_hash.h \
-  /usr/include/c++/15.2.1/bits/hash_bytes.h \
-  /usr/include/c++/15.2.1/bits/invoke.h \
-  /usr/include/c++/15.2.1/bits/ios_base.h \
-  /usr/include/c++/15.2.1/bits/istream.tcc \
-  /usr/include/c++/15.2.1/bits/locale_classes.h \
-  /usr/include/c++/15.2.1/bits/locale_classes.tcc \
-  /usr/include/c++/15.2.1/bits/locale_conv.h \
-  /usr/include/c++/15.2.1/bits/locale_facets.h \
-  /usr/include/c++/15.2.1/bits/locale_facets.tcc \
-  /usr/include/c++/15.2.1/bits/locale_facets_nonio.h \
-  /usr/include/c++/15.2.1/bits/locale_facets_nonio.tcc \
-  /usr/include/c++/15.2.1/bits/localefwd.h \
-  /usr/include/c++/15.2.1/bits/memory_resource.h \
-  /usr/include/c++/15.2.1/bits/memoryfwd.h \
-  /usr/include/c++/15.2.1/bits/move.h \
-  /usr/include/c++/15.2.1/bits/nested_exception.h \
-  /usr/include/c++/15.2.1/bits/new_allocator.h \
-  /usr/include/c++/15.2.1/bits/node_handle.h \
-  /usr/include/c++/15.2.1/bits/ostream.h \
-  /usr/include/c++/15.2.1/bits/ostream.tcc \
-  /usr/include/c++/15.2.1/bits/ostream_insert.h \
-  /usr/include/c++/15.2.1/bits/parse_numbers.h \
-  /usr/include/c++/15.2.1/bits/postypes.h \
-  /usr/include/c++/15.2.1/bits/predefined_ops.h \
-  /usr/include/c++/15.2.1/bits/ptr_traits.h \
-  /usr/include/c++/15.2.1/bits/quoted_string.h \
-  /usr/include/c++/15.2.1/bits/range_access.h \
-  /usr/include/c++/15.2.1/bits/refwrap.h \
-  /usr/include/c++/15.2.1/bits/requires_hosted.h \
-  /usr/include/c++/15.2.1/bits/specfun.h \
-  /usr/include/c++/15.2.1/bits/sstream.tcc \
-  /usr/include/c++/15.2.1/bits/std_abs.h \
-  /usr/include/c++/15.2.1/bits/std_mutex.h \
-  /usr/include/c++/15.2.1/bits/stl_algo.h \
-  /usr/include/c++/15.2.1/bits/stl_algobase.h \
-  /usr/include/c++/15.2.1/bits/stl_bvector.h \
-  /usr/include/c++/15.2.1/bits/stl_construct.h \
-  /usr/include/c++/15.2.1/bits/stl_function.h \
-  /usr/include/c++/15.2.1/bits/stl_heap.h \
-  /usr/include/c++/15.2.1/bits/stl_iterator.h \
-  /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h \
-  /usr/include/c++/15.2.1/bits/stl_map.h \
-  /usr/include/c++/15.2.1/bits/stl_multimap.h \
-  /usr/include/c++/15.2.1/bits/stl_pair.h \
-  /usr/include/c++/15.2.1/bits/stl_tempbuf.h \
-  /usr/include/c++/15.2.1/bits/stl_tree.h \
-  /usr/include/c++/15.2.1/bits/stl_uninitialized.h \
-  /usr/include/c++/15.2.1/bits/stl_vector.h \
-  /usr/include/c++/15.2.1/bits/streambuf.tcc \
-  /usr/include/c++/15.2.1/bits/streambuf_iterator.h \
-  /usr/include/c++/15.2.1/bits/string_view.tcc \
-  /usr/include/c++/15.2.1/bits/stringfwd.h \
-  /usr/include/c++/15.2.1/bits/uniform_int_dist.h \
-  /usr/include/c++/15.2.1/bits/unique_lock.h \
-  /usr/include/c++/15.2.1/bits/uses_allocator.h \
-  /usr/include/c++/15.2.1/bits/uses_allocator_args.h \
-  /usr/include/c++/15.2.1/bits/utility.h \
-  /usr/include/c++/15.2.1/bits/vector.tcc \
-  /usr/include/c++/15.2.1/bits/version.h \
-  /usr/include/c++/15.2.1/cctype \
-  /usr/include/c++/15.2.1/cerrno \
-  /usr/include/c++/15.2.1/climits \
-  /usr/include/c++/15.2.1/clocale \
-  /usr/include/c++/15.2.1/cmath \
-  /usr/include/c++/15.2.1/complex \
-  /usr/include/c++/15.2.1/concepts \
-  /usr/include/c++/15.2.1/cstddef \
-  /usr/include/c++/15.2.1/cstdint \
-  /usr/include/c++/15.2.1/cstdio \
-  /usr/include/c++/15.2.1/cstdlib \
-  /usr/include/c++/15.2.1/cstring \
-  /usr/include/c++/15.2.1/ctime \
-  /usr/include/c++/15.2.1/cwchar \
-  /usr/include/c++/15.2.1/cwctype \
-  /usr/include/c++/15.2.1/debug/assertions.h \
-  /usr/include/c++/15.2.1/debug/debug.h \
-  /usr/include/c++/15.2.1/exception \
-  /usr/include/c++/15.2.1/ext/aligned_buffer.h \
-  /usr/include/c++/15.2.1/ext/alloc_traits.h \
-  /usr/include/c++/15.2.1/ext/atomicity.h \
-  /usr/include/c++/15.2.1/ext/numeric_traits.h \
-  /usr/include/c++/15.2.1/ext/string_conversions.h \
-  /usr/include/c++/15.2.1/ext/type_traits.h \
-  /usr/include/c++/15.2.1/initializer_list \
-  /usr/include/c++/15.2.1/iomanip \
-  /usr/include/c++/15.2.1/ios \
-  /usr/include/c++/15.2.1/iosfwd \
-  /usr/include/c++/15.2.1/iostream \
-  /usr/include/c++/15.2.1/istream \
-  /usr/include/c++/15.2.1/limits \
-  /usr/include/c++/15.2.1/locale \
-  /usr/include/c++/15.2.1/map \
-  /usr/include/c++/15.2.1/mutex \
-  /usr/include/c++/15.2.1/new \
-  /usr/include/c++/15.2.1/ostream \
-  /usr/include/c++/15.2.1/pstl/execution_defs.h \
-  /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/15.2.1/pstl/pstl_config.h \
-  /usr/include/c++/15.2.1/ratio \
-  /usr/include/c++/15.2.1/sstream \
-  /usr/include/c++/15.2.1/stdexcept \
-  /usr/include/c++/15.2.1/streambuf \
-  /usr/include/c++/15.2.1/string \
-  /usr/include/c++/15.2.1/string_view \
-  /usr/include/c++/15.2.1/system_error \
-  /usr/include/c++/15.2.1/tr1/bessel_function.tcc \
-  /usr/include/c++/15.2.1/tr1/beta_function.tcc \
-  /usr/include/c++/15.2.1/tr1/ell_integral.tcc \
-  /usr/include/c++/15.2.1/tr1/exp_integral.tcc \
-  /usr/include/c++/15.2.1/tr1/gamma.tcc \
-  /usr/include/c++/15.2.1/tr1/hypergeometric.tcc \
-  /usr/include/c++/15.2.1/tr1/legendre_function.tcc \
-  /usr/include/c++/15.2.1/tr1/modified_bessel_func.tcc \
-  /usr/include/c++/15.2.1/tr1/poly_hermite.tcc \
-  /usr/include/c++/15.2.1/tr1/poly_laguerre.tcc \
-  /usr/include/c++/15.2.1/tr1/riemann_zeta.tcc \
-  /usr/include/c++/15.2.1/tr1/special_function_util.h \
-  /usr/include/c++/15.2.1/tuple \
-  /usr/include/c++/15.2.1/type_traits \
-  /usr/include/c++/15.2.1/typeinfo \
-  /usr/include/c++/15.2.1/vector \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/error_constants.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/messages_members.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/time_members.h \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/gnu/stubs-64.h \
-  /usr/include/gnu/stubs.h \
-  /usr/include/libintl.h \
-  /usr/include/limits.h \
-  /usr/include/linux/errno.h \
-  /usr/include/linux/limits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/sched/types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/linux/types.h \
-  /usr/include/locale.h \
-  /usr/include/math.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/sys/cdefs.h \
-  /usr/include/sys/select.h \
-  /usr/include/sys/single_threaded.h \
-  /usr/include/sys/types.h \
-  /usr/include/time.h \
-  /usr/include/wchar.h \
-  /usr/include/wctype.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
-
-CMakeFiles/geant_plate.dir/src/RootIO.cc.o: /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/RootIO.cc \
-  /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/RootIO.hh \
-  /usr/include/Bytes.h \
-  /usr/include/Byteswap.h \
-  /usr/include/Compression.h \
-  /usr/include/DllImport.h \
-  /usr/include/ESTLType.h \
-  /usr/include/RConfigure.h \
-  /usr/include/ROOT/RConcurrentHashColl.hxx \
-  /usr/include/ROOT/RConfig.hxx \
-  /usr/include/ROOT/RRangeCast.hxx \
-  /usr/include/ROOT/RSpan.hxx \
-  /usr/include/ROOT/RVersion.hxx \
-  /usr/include/ROOT/TIOFeatures.hxx \
-  /usr/include/ROOT/TRWSpinLock.hxx \
-  /usr/include/ROOT/TSpinMutex.hxx \
-  /usr/include/ROOT/TypeTraits.hxx \
-  /usr/include/ROOT/span.hxx \
-  /usr/include/RVersion.h \
-  /usr/include/Rtypes.h \
-  /usr/include/RtypesCore.h \
-  /usr/include/TArray.h \
-  /usr/include/TArrayD.h \
-  /usr/include/TArrayI.h \
-  /usr/include/TAttFill.h \
-  /usr/include/TAttLine.h \
-  /usr/include/TAttMarker.h \
-  /usr/include/TBits.h \
-  /usr/include/TBranch.h \
-  /usr/include/TBranchCacheInfo.h \
-  /usr/include/TBuffer.h \
-  /usr/include/TClass.h \
-  /usr/include/TCollection.h \
-  /usr/include/TDataType.h \
-  /usr/include/TDatime.h \
-  /usr/include/TDictionary.h \
-  /usr/include/TDirectory.h \
-  /usr/include/TDirectoryFile.h \
-  /usr/include/TFile.h \
-  /usr/include/TGenericClassInfo.h \
-  /usr/include/TIsAProxy.h \
-  /usr/include/TIterator.h \
-  /usr/include/TList.h \
-  /usr/include/TNamed.h \
-  /usr/include/TObjArray.h \
-  /usr/include/TObject.h \
-  /usr/include/TSchemaHelper.h \
-  /usr/include/TSchemaRule.h \
-  /usr/include/TSeqCollection.h \
-  /usr/include/TStorage.h \
-  /usr/include/TString.h \
-  /usr/include/TTree.h \
-  /usr/include/TUUID.h \
-  /usr/include/TUrl.h \
-  /usr/include/TVersionCheck.h \
-  /usr/include/TVirtualIsAProxy.h \
-  /usr/include/TVirtualMutex.h \
-  /usr/include/TVirtualRWMutex.h \
-  /usr/include/TVirtualTreePlayer.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/asm/bitsperlong.h \
-  /usr/include/asm/errno.h \
-  /usr/include/asm/posix_types.h \
-  /usr/include/asm/posix_types_64.h \
-  /usr/include/asm/types.h \
-  /usr/include/assert.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/cpu-set.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/errno.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/locale.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/pthread_stack_min-dynamic.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/sched.h \
-  /usr/include/bits/select-decl.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/select2.h \
-  /usr/include/bits/setjmp.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-least.h \
-  /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio.h \
-  /usr/include/bits/stdio2-decl.h \
-  /usr/include/bits/stdio2.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-bsearch.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/stdlib.h \
-  /usr/include/bits/string_fortified.h \
-  /usr/include/bits/strings_fortified.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/timex.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/error_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/bits/types/struct_itimerspec.h \
-  /usr/include/bits/types/struct_sched_param.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/struct_tm.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/types/wint_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wchar2-decl.h \
-  /usr/include/bits/wchar2.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/c++/15.2.1/array \
-  /usr/include/c++/15.2.1/atomic \
-  /usr/include/c++/15.2.1/backward/auto_ptr.h \
-  /usr/include/c++/15.2.1/backward/binders.h \
-  /usr/include/c++/15.2.1/bit \
-  /usr/include/c++/15.2.1/bits/align.h \
-  /usr/include/c++/15.2.1/bits/alloc_traits.h \
-  /usr/include/c++/15.2.1/bits/allocated_ptr.h \
-  /usr/include/c++/15.2.1/bits/allocator.h \
-  /usr/include/c++/15.2.1/bits/atomic_base.h \
-  /usr/include/c++/15.2.1/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/15.2.1/bits/basic_string.h \
-  /usr/include/c++/15.2.1/bits/basic_string.tcc \
-  /usr/include/c++/15.2.1/bits/char_traits.h \
-  /usr/include/c++/15.2.1/bits/charconv.h \
-  /usr/include/c++/15.2.1/bits/chrono.h \
-  /usr/include/c++/15.2.1/bits/concept_check.h \
-  /usr/include/c++/15.2.1/bits/cpp_type_traits.h \
-  /usr/include/c++/15.2.1/bits/cxxabi_forced.h \
-  /usr/include/c++/15.2.1/bits/cxxabi_init_exception.h \
-  /usr/include/c++/15.2.1/bits/enable_special_members.h \
-  /usr/include/c++/15.2.1/bits/erase_if.h \
-  /usr/include/c++/15.2.1/bits/exception.h \
-  /usr/include/c++/15.2.1/bits/exception_defines.h \
-  /usr/include/c++/15.2.1/bits/exception_ptr.h \
-  /usr/include/c++/15.2.1/bits/functexcept.h \
-  /usr/include/c++/15.2.1/bits/functional_hash.h \
-  /usr/include/c++/15.2.1/bits/hash_bytes.h \
-  /usr/include/c++/15.2.1/bits/hashtable.h \
-  /usr/include/c++/15.2.1/bits/hashtable_policy.h \
-  /usr/include/c++/15.2.1/bits/invoke.h \
-  /usr/include/c++/15.2.1/bits/ios_base.h \
-  /usr/include/c++/15.2.1/bits/locale_classes.h \
-  /usr/include/c++/15.2.1/bits/locale_classes.tcc \
-  /usr/include/c++/15.2.1/bits/localefwd.h \
-  /usr/include/c++/15.2.1/bits/memory_resource.h \
-  /usr/include/c++/15.2.1/bits/memoryfwd.h \
-  /usr/include/c++/15.2.1/bits/move.h \
-  /usr/include/c++/15.2.1/bits/nested_exception.h \
-  /usr/include/c++/15.2.1/bits/new_allocator.h \
-  /usr/include/c++/15.2.1/bits/node_handle.h \
-  /usr/include/c++/15.2.1/bits/ostream_insert.h \
-  /usr/include/c++/15.2.1/bits/parse_numbers.h \
-  /usr/include/c++/15.2.1/bits/postypes.h \
-  /usr/include/c++/15.2.1/bits/predefined_ops.h \
-  /usr/include/c++/15.2.1/bits/ptr_traits.h \
-  /usr/include/c++/15.2.1/bits/range_access.h \
-  /usr/include/c++/15.2.1/bits/refwrap.h \
-  /usr/include/c++/15.2.1/bits/requires_hosted.h \
-  /usr/include/c++/15.2.1/bits/shared_ptr.h \
-  /usr/include/c++/15.2.1/bits/shared_ptr_atomic.h \
-  /usr/include/c++/15.2.1/bits/shared_ptr_base.h \
-  /usr/include/c++/15.2.1/bits/std_abs.h \
-  /usr/include/c++/15.2.1/bits/std_function.h \
-  /usr/include/c++/15.2.1/bits/std_mutex.h \
-  /usr/include/c++/15.2.1/bits/stl_algobase.h \
-  /usr/include/c++/15.2.1/bits/stl_bvector.h \
-  /usr/include/c++/15.2.1/bits/stl_construct.h \
-  /usr/include/c++/15.2.1/bits/stl_function.h \
-  /usr/include/c++/15.2.1/bits/stl_iterator.h \
-  /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h \
-  /usr/include/c++/15.2.1/bits/stl_map.h \
-  /usr/include/c++/15.2.1/bits/stl_multimap.h \
-  /usr/include/c++/15.2.1/bits/stl_pair.h \
-  /usr/include/c++/15.2.1/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/15.2.1/bits/stl_relops.h \
-  /usr/include/c++/15.2.1/bits/stl_tempbuf.h \
-  /usr/include/c++/15.2.1/bits/stl_tree.h \
-  /usr/include/c++/15.2.1/bits/stl_uninitialized.h \
-  /usr/include/c++/15.2.1/bits/stl_vector.h \
-  /usr/include/c++/15.2.1/bits/stream_iterator.h \
-  /usr/include/c++/15.2.1/bits/streambuf.tcc \
-  /usr/include/c++/15.2.1/bits/streambuf_iterator.h \
-  /usr/include/c++/15.2.1/bits/string_view.tcc \
-  /usr/include/c++/15.2.1/bits/stringfwd.h \
-  /usr/include/c++/15.2.1/bits/unique_lock.h \
-  /usr/include/c++/15.2.1/bits/unique_ptr.h \
-  /usr/include/c++/15.2.1/bits/unordered_map.h \
-  /usr/include/c++/15.2.1/bits/unordered_set.h \
-  /usr/include/c++/15.2.1/bits/uses_allocator.h \
-  /usr/include/c++/15.2.1/bits/uses_allocator_args.h \
-  /usr/include/c++/15.2.1/bits/utility.h \
-  /usr/include/c++/15.2.1/bits/vector.tcc \
-  /usr/include/c++/15.2.1/bits/version.h \
-  /usr/include/c++/15.2.1/cassert \
-  /usr/include/c++/15.2.1/cctype \
-  /usr/include/c++/15.2.1/cerrno \
-  /usr/include/c++/15.2.1/clocale \
-  /usr/include/c++/15.2.1/compare \
-  /usr/include/c++/15.2.1/concepts \
-  /usr/include/c++/15.2.1/condition_variable \
-  /usr/include/c++/15.2.1/cstdarg \
-  /usr/include/c++/15.2.1/cstddef \
-  /usr/include/c++/15.2.1/cstdint \
-  /usr/include/c++/15.2.1/cstdio \
-  /usr/include/c++/15.2.1/cstdlib \
-  /usr/include/c++/15.2.1/cstring \
-  /usr/include/c++/15.2.1/ctime \
-  /usr/include/c++/15.2.1/cwchar \
-  /usr/include/c++/15.2.1/debug/assertions.h \
-  /usr/include/c++/15.2.1/debug/debug.h \
-  /usr/include/c++/15.2.1/exception \
-  /usr/include/c++/15.2.1/ext/aligned_buffer.h \
-  /usr/include/c++/15.2.1/ext/alloc_traits.h \
-  /usr/include/c++/15.2.1/ext/atomicity.h \
-  /usr/include/c++/15.2.1/ext/concurrence.h \
-  /usr/include/c++/15.2.1/ext/numeric_traits.h \
-  /usr/include/c++/15.2.1/ext/string_conversions.h \
-  /usr/include/c++/15.2.1/ext/type_traits.h \
-  /usr/include/c++/15.2.1/functional \
-  /usr/include/c++/15.2.1/initializer_list \
-  /usr/include/c++/15.2.1/iosfwd \
-  /usr/include/c++/15.2.1/iterator \
-  /usr/include/c++/15.2.1/limits \
-  /usr/include/c++/15.2.1/map \
-  /usr/include/c++/15.2.1/memory \
-  /usr/include/c++/15.2.1/mutex \
-  /usr/include/c++/15.2.1/new \
-  /usr/include/c++/15.2.1/optional \
-  /usr/include/c++/15.2.1/pstl/execution_defs.h \
-  /usr/include/c++/15.2.1/pstl/glue_memory_defs.h \
-  /usr/include/c++/15.2.1/pstl/pstl_config.h \
-  /usr/include/c++/15.2.1/ratio \
-  /usr/include/c++/15.2.1/stdexcept \
-  /usr/include/c++/15.2.1/streambuf \
-  /usr/include/c++/15.2.1/string \
-  /usr/include/c++/15.2.1/string_view \
-  /usr/include/c++/15.2.1/system_error \
-  /usr/include/c++/15.2.1/tuple \
-  /usr/include/c++/15.2.1/type_traits \
-  /usr/include/c++/15.2.1/typeinfo \
-  /usr/include/c++/15.2.1/unordered_map \
-  /usr/include/c++/15.2.1/unordered_set \
-  /usr/include/c++/15.2.1/utility \
-  /usr/include/c++/15.2.1/vector \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/error_constants.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/gnu/stubs-64.h \
-  /usr/include/gnu/stubs.h \
-  /usr/include/linux/errno.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/sched/types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/linux/types.h \
-  /usr/include/locale.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/snprintf.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/strlcpy.h \
-  /usr/include/strtok.h \
-  /usr/include/sys/cdefs.h \
-  /usr/include/sys/select.h \
-  /usr/include/sys/single_threaded.h \
-  /usr/include/sys/types.h \
-  /usr/include/time.h \
-  /usr/include/wchar.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
-
-CMakeFiles/geant_plate.dir/src/RunAction.cc.o: /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/RunAction.cc \
-  /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/RootIO.hh \
-  /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/RunAction.hh \
-  /usr/include/Bytes.h \
-  /usr/include/Byteswap.h \
-  /usr/include/Compression.h \
-  /usr/include/DllImport.h \
-  /usr/include/ESTLType.h \
-  /usr/include/Geant4/G4GlobalConfig.hh \
-  /usr/include/Geant4/G4Types.hh \
-  /usr/include/Geant4/G4UserRunAction.hh \
-  /usr/include/Geant4/tls.hh \
-  /usr/include/RConfigure.h \
-  /usr/include/ROOT/RConcurrentHashColl.hxx \
-  /usr/include/ROOT/RConfig.hxx \
-  /usr/include/ROOT/RRangeCast.hxx \
-  /usr/include/ROOT/RSpan.hxx \
-  /usr/include/ROOT/RVersion.hxx \
-  /usr/include/ROOT/TIOFeatures.hxx \
-  /usr/include/ROOT/TRWSpinLock.hxx \
-  /usr/include/ROOT/TSpinMutex.hxx \
-  /usr/include/ROOT/TypeTraits.hxx \
-  /usr/include/ROOT/span.hxx \
-  /usr/include/RVersion.h \
-  /usr/include/Rtypes.h \
-  /usr/include/RtypesCore.h \
-  /usr/include/TArray.h \
-  /usr/include/TArrayD.h \
-  /usr/include/TArrayI.h \
-  /usr/include/TAttFill.h \
-  /usr/include/TAttLine.h \
-  /usr/include/TAttMarker.h \
-  /usr/include/TBits.h \
-  /usr/include/TBranch.h \
-  /usr/include/TBranchCacheInfo.h \
-  /usr/include/TBuffer.h \
-  /usr/include/TClass.h \
-  /usr/include/TCollection.h \
-  /usr/include/TDataType.h \
-  /usr/include/TDatime.h \
-  /usr/include/TDictionary.h \
-  /usr/include/TDirectory.h \
-  /usr/include/TDirectoryFile.h \
-  /usr/include/TFile.h \
-  /usr/include/TGenericClassInfo.h \
-  /usr/include/TIsAProxy.h \
-  /usr/include/TIterator.h \
-  /usr/include/TList.h \
-  /usr/include/TNamed.h \
-  /usr/include/TObjArray.h \
-  /usr/include/TObject.h \
-  /usr/include/TSchemaHelper.h \
-  /usr/include/TSchemaRule.h \
-  /usr/include/TSeqCollection.h \
-  /usr/include/TStorage.h \
-  /usr/include/TString.h \
-  /usr/include/TTree.h \
-  /usr/include/TUUID.h \
-  /usr/include/TUrl.h \
-  /usr/include/TVersionCheck.h \
-  /usr/include/TVirtualIsAProxy.h \
-  /usr/include/TVirtualMutex.h \
-  /usr/include/TVirtualRWMutex.h \
-  /usr/include/TVirtualTreePlayer.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/asm/bitsperlong.h \
-  /usr/include/asm/errno.h \
-  /usr/include/asm/posix_types.h \
-  /usr/include/asm/posix_types_64.h \
-  /usr/include/asm/types.h \
-  /usr/include/assert.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/cpu-set.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/errno.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/flt-eval-method.h \
-  /usr/include/bits/fp-fast.h \
-  /usr/include/bits/fp-logb.h \
-  /usr/include/bits/iscanonical.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/libm-simd-decl-stubs.h \
-  /usr/include/bits/locale.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/math-vector.h \
-  /usr/include/bits/mathcalls-helper-functions.h \
-  /usr/include/bits/mathcalls-macros.h \
-  /usr/include/bits/mathcalls-narrow.h \
-  /usr/include/bits/mathcalls.h \
-  /usr/include/bits/pthread_stack_min-dynamic.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/sched.h \
-  /usr/include/bits/select-decl.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/select2.h \
-  /usr/include/bits/setjmp.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-least.h \
-  /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio.h \
-  /usr/include/bits/stdio2-decl.h \
-  /usr/include/bits/stdio2.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-bsearch.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/stdlib.h \
-  /usr/include/bits/string_fortified.h \
-  /usr/include/bits/strings_fortified.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/timex.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/error_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/bits/types/struct_itimerspec.h \
-  /usr/include/bits/types/struct_sched_param.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/struct_tm.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/types/wint_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wchar2-decl.h \
-  /usr/include/bits/wchar2.h \
-  /usr/include/bits/wctype-wchar.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/c++/15.2.1/array \
-  /usr/include/c++/15.2.1/atomic \
-  /usr/include/c++/15.2.1/backward/auto_ptr.h \
-  /usr/include/c++/15.2.1/backward/binders.h \
-  /usr/include/c++/15.2.1/bit \
-  /usr/include/c++/15.2.1/bits/align.h \
-  /usr/include/c++/15.2.1/bits/alloc_traits.h \
-  /usr/include/c++/15.2.1/bits/allocated_ptr.h \
-  /usr/include/c++/15.2.1/bits/allocator.h \
-  /usr/include/c++/15.2.1/bits/atomic_base.h \
-  /usr/include/c++/15.2.1/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/15.2.1/bits/basic_ios.h \
-  /usr/include/c++/15.2.1/bits/basic_ios.tcc \
-  /usr/include/c++/15.2.1/bits/basic_string.h \
-  /usr/include/c++/15.2.1/bits/basic_string.tcc \
-  /usr/include/c++/15.2.1/bits/char_traits.h \
-  /usr/include/c++/15.2.1/bits/charconv.h \
-  /usr/include/c++/15.2.1/bits/chrono.h \
-  /usr/include/c++/15.2.1/bits/concept_check.h \
-  /usr/include/c++/15.2.1/bits/cpp_type_traits.h \
-  /usr/include/c++/15.2.1/bits/cxxabi_forced.h \
-  /usr/include/c++/15.2.1/bits/cxxabi_init_exception.h \
-  /usr/include/c++/15.2.1/bits/enable_special_members.h \
-  /usr/include/c++/15.2.1/bits/erase_if.h \
-  /usr/include/c++/15.2.1/bits/exception.h \
-  /usr/include/c++/15.2.1/bits/exception_defines.h \
-  /usr/include/c++/15.2.1/bits/exception_ptr.h \
-  /usr/include/c++/15.2.1/bits/functexcept.h \
-  /usr/include/c++/15.2.1/bits/functional_hash.h \
-  /usr/include/c++/15.2.1/bits/hash_bytes.h \
-  /usr/include/c++/15.2.1/bits/hashtable.h \
-  /usr/include/c++/15.2.1/bits/hashtable_policy.h \
-  /usr/include/c++/15.2.1/bits/invoke.h \
-  /usr/include/c++/15.2.1/bits/ios_base.h \
-  /usr/include/c++/15.2.1/bits/istream.tcc \
-  /usr/include/c++/15.2.1/bits/locale_classes.h \
-  /usr/include/c++/15.2.1/bits/locale_classes.tcc \
-  /usr/include/c++/15.2.1/bits/locale_facets.h \
-  /usr/include/c++/15.2.1/bits/locale_facets.tcc \
-  /usr/include/c++/15.2.1/bits/localefwd.h \
-  /usr/include/c++/15.2.1/bits/memory_resource.h \
-  /usr/include/c++/15.2.1/bits/memoryfwd.h \
-  /usr/include/c++/15.2.1/bits/move.h \
-  /usr/include/c++/15.2.1/bits/nested_exception.h \
-  /usr/include/c++/15.2.1/bits/new_allocator.h \
-  /usr/include/c++/15.2.1/bits/node_handle.h \
-  /usr/include/c++/15.2.1/bits/ostream.h \
-  /usr/include/c++/15.2.1/bits/ostream.tcc \
-  /usr/include/c++/15.2.1/bits/ostream_insert.h \
-  /usr/include/c++/15.2.1/bits/parse_numbers.h \
-  /usr/include/c++/15.2.1/bits/postypes.h \
-  /usr/include/c++/15.2.1/bits/predefined_ops.h \
-  /usr/include/c++/15.2.1/bits/ptr_traits.h \
-  /usr/include/c++/15.2.1/bits/range_access.h \
-  /usr/include/c++/15.2.1/bits/refwrap.h \
-  /usr/include/c++/15.2.1/bits/requires_hosted.h \
-  /usr/include/c++/15.2.1/bits/shared_ptr.h \
-  /usr/include/c++/15.2.1/bits/shared_ptr_atomic.h \
-  /usr/include/c++/15.2.1/bits/shared_ptr_base.h \
-  /usr/include/c++/15.2.1/bits/specfun.h \
-  /usr/include/c++/15.2.1/bits/sstream.tcc \
-  /usr/include/c++/15.2.1/bits/std_abs.h \
-  /usr/include/c++/15.2.1/bits/std_function.h \
-  /usr/include/c++/15.2.1/bits/std_mutex.h \
-  /usr/include/c++/15.2.1/bits/stl_algobase.h \
-  /usr/include/c++/15.2.1/bits/stl_bvector.h \
-  /usr/include/c++/15.2.1/bits/stl_construct.h \
-  /usr/include/c++/15.2.1/bits/stl_function.h \
-  /usr/include/c++/15.2.1/bits/stl_iterator.h \
-  /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h \
-  /usr/include/c++/15.2.1/bits/stl_map.h \
-  /usr/include/c++/15.2.1/bits/stl_multimap.h \
-  /usr/include/c++/15.2.1/bits/stl_pair.h \
-  /usr/include/c++/15.2.1/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/15.2.1/bits/stl_relops.h \
-  /usr/include/c++/15.2.1/bits/stl_tempbuf.h \
-  /usr/include/c++/15.2.1/bits/stl_tree.h \
-  /usr/include/c++/15.2.1/bits/stl_uninitialized.h \
-  /usr/include/c++/15.2.1/bits/stl_vector.h \
-  /usr/include/c++/15.2.1/bits/stream_iterator.h \
-  /usr/include/c++/15.2.1/bits/streambuf.tcc \
-  /usr/include/c++/15.2.1/bits/streambuf_iterator.h \
-  /usr/include/c++/15.2.1/bits/string_view.tcc \
-  /usr/include/c++/15.2.1/bits/stringfwd.h \
-  /usr/include/c++/15.2.1/bits/unique_lock.h \
-  /usr/include/c++/15.2.1/bits/unique_ptr.h \
-  /usr/include/c++/15.2.1/bits/unordered_map.h \
-  /usr/include/c++/15.2.1/bits/unordered_set.h \
-  /usr/include/c++/15.2.1/bits/uses_allocator.h \
-  /usr/include/c++/15.2.1/bits/uses_allocator_args.h \
-  /usr/include/c++/15.2.1/bits/utility.h \
-  /usr/include/c++/15.2.1/bits/vector.tcc \
-  /usr/include/c++/15.2.1/bits/version.h \
-  /usr/include/c++/15.2.1/cassert \
-  /usr/include/c++/15.2.1/cctype \
-  /usr/include/c++/15.2.1/cerrno \
-  /usr/include/c++/15.2.1/clocale \
-  /usr/include/c++/15.2.1/cmath \
-  /usr/include/c++/15.2.1/compare \
-  /usr/include/c++/15.2.1/complex \
-  /usr/include/c++/15.2.1/concepts \
-  /usr/include/c++/15.2.1/condition_variable \
-  /usr/include/c++/15.2.1/cstdarg \
-  /usr/include/c++/15.2.1/cstddef \
-  /usr/include/c++/15.2.1/cstdint \
-  /usr/include/c++/15.2.1/cstdio \
-  /usr/include/c++/15.2.1/cstdlib \
-  /usr/include/c++/15.2.1/cstring \
-  /usr/include/c++/15.2.1/ctime \
-  /usr/include/c++/15.2.1/cwchar \
-  /usr/include/c++/15.2.1/cwctype \
-  /usr/include/c++/15.2.1/debug/assertions.h \
-  /usr/include/c++/15.2.1/debug/debug.h \
-  /usr/include/c++/15.2.1/exception \
-  /usr/include/c++/15.2.1/ext/aligned_buffer.h \
-  /usr/include/c++/15.2.1/ext/alloc_traits.h \
-  /usr/include/c++/15.2.1/ext/atomicity.h \
-  /usr/include/c++/15.2.1/ext/concurrence.h \
-  /usr/include/c++/15.2.1/ext/numeric_traits.h \
-  /usr/include/c++/15.2.1/ext/string_conversions.h \
-  /usr/include/c++/15.2.1/ext/type_traits.h \
-  /usr/include/c++/15.2.1/functional \
-  /usr/include/c++/15.2.1/initializer_list \
-  /usr/include/c++/15.2.1/ios \
-  /usr/include/c++/15.2.1/iosfwd \
-  /usr/include/c++/15.2.1/istream \
-  /usr/include/c++/15.2.1/iterator \
-  /usr/include/c++/15.2.1/limits \
-  /usr/include/c++/15.2.1/map \
-  /usr/include/c++/15.2.1/memory \
-  /usr/include/c++/15.2.1/mutex \
-  /usr/include/c++/15.2.1/new \
-  /usr/include/c++/15.2.1/optional \
-  /usr/include/c++/15.2.1/ostream \
-  /usr/include/c++/15.2.1/pstl/execution_defs.h \
-  /usr/include/c++/15.2.1/pstl/glue_memory_defs.h \
-  /usr/include/c++/15.2.1/pstl/pstl_config.h \
-  /usr/include/c++/15.2.1/ratio \
-  /usr/include/c++/15.2.1/sstream \
-  /usr/include/c++/15.2.1/stdexcept \
-  /usr/include/c++/15.2.1/streambuf \
-  /usr/include/c++/15.2.1/string \
-  /usr/include/c++/15.2.1/string_view \
-  /usr/include/c++/15.2.1/system_error \
-  /usr/include/c++/15.2.1/tr1/bessel_function.tcc \
-  /usr/include/c++/15.2.1/tr1/beta_function.tcc \
-  /usr/include/c++/15.2.1/tr1/ell_integral.tcc \
-  /usr/include/c++/15.2.1/tr1/exp_integral.tcc \
-  /usr/include/c++/15.2.1/tr1/gamma.tcc \
-  /usr/include/c++/15.2.1/tr1/hypergeometric.tcc \
-  /usr/include/c++/15.2.1/tr1/legendre_function.tcc \
-  /usr/include/c++/15.2.1/tr1/modified_bessel_func.tcc \
-  /usr/include/c++/15.2.1/tr1/poly_hermite.tcc \
-  /usr/include/c++/15.2.1/tr1/poly_laguerre.tcc \
-  /usr/include/c++/15.2.1/tr1/riemann_zeta.tcc \
-  /usr/include/c++/15.2.1/tr1/special_function_util.h \
-  /usr/include/c++/15.2.1/tuple \
-  /usr/include/c++/15.2.1/type_traits \
-  /usr/include/c++/15.2.1/typeinfo \
-  /usr/include/c++/15.2.1/unordered_map \
-  /usr/include/c++/15.2.1/unordered_set \
-  /usr/include/c++/15.2.1/utility \
-  /usr/include/c++/15.2.1/vector \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/error_constants.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/gnu/stubs-64.h \
-  /usr/include/gnu/stubs.h \
-  /usr/include/linux/errno.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/sched/types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/linux/types.h \
-  /usr/include/locale.h \
-  /usr/include/math.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/snprintf.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/strlcpy.h \
-  /usr/include/strtok.h \
-  /usr/include/sys/cdefs.h \
-  /usr/include/sys/select.h \
-  /usr/include/sys/single_threaded.h \
-  /usr/include/sys/types.h \
-  /usr/include/time.h \
-  /usr/include/wchar.h \
-  /usr/include/wctype.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
-
-CMakeFiles/geant_plate.dir/src/SteppingAction.cc.o: /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/SteppingAction.cc \
-  /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/RootIO.hh \
-  /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/SteppingAction.hh \
-  /usr/include/Bytes.h \
-  /usr/include/Byteswap.h \
-  /usr/include/CLHEP/Geometry/BasicVector3D.h \
-  /usr/include/CLHEP/Geometry/Normal3D.h \
-  /usr/include/CLHEP/Geometry/Point3D.h \
-  /usr/include/CLHEP/Geometry/Transform3D.h \
-  /usr/include/CLHEP/Geometry/Transform3D.icc \
-  /usr/include/CLHEP/Geometry/Vector3D.h \
-  /usr/include/CLHEP/Geometry/defs.h \
-  /usr/include/CLHEP/Units/PhysicalConstants.h \
-  /usr/include/CLHEP/Units/SystemOfUnits.h \
-  /usr/include/CLHEP/Units/defs.h \
-  /usr/include/CLHEP/Vector/AxisAngle.h \
-  /usr/include/CLHEP/Vector/AxisAngle.icc \
-  /usr/include/CLHEP/Vector/LorentzVector.h \
-  /usr/include/CLHEP/Vector/LorentzVector.icc \
-  /usr/include/CLHEP/Vector/Rotation.h \
-  /usr/include/CLHEP/Vector/Rotation.icc \
-  /usr/include/CLHEP/Vector/RotationInterfaces.h \
-  /usr/include/CLHEP/Vector/RotationInterfaces.icc \
-  /usr/include/CLHEP/Vector/RotationX.h \
-  /usr/include/CLHEP/Vector/RotationX.icc \
-  /usr/include/CLHEP/Vector/RotationY.h \
-  /usr/include/CLHEP/Vector/RotationY.icc \
-  /usr/include/CLHEP/Vector/RotationZ.h \
-  /usr/include/CLHEP/Vector/RotationZ.icc \
-  /usr/include/CLHEP/Vector/ThreeVector.h \
-  /usr/include/CLHEP/Vector/ThreeVector.icc \
-  /usr/include/CLHEP/Vector/ZMxpv.h \
-  /usr/include/CLHEP/Vector/defs.h \
-  /usr/include/Compression.h \
-  /usr/include/DllImport.h \
-  /usr/include/ESTLType.h \
-  /usr/include/Geant4/G4AffineTransform.hh \
-  /usr/include/Geant4/G4AffineTransform.icc \
-  /usr/include/Geant4/G4Allocator.hh \
-  /usr/include/Geant4/G4AllocatorPool.hh \
-  /usr/include/Geant4/G4AutoLock.hh \
-  /usr/include/Geant4/G4DataVector.hh \
-  /usr/include/Geant4/G4DataVector.icc \
-  /usr/include/Geant4/G4DensityEffectCalculator.hh \
-  /usr/include/Geant4/G4DynamicParticle.hh \
-  /usr/include/Geant4/G4DynamicParticle.icc \
-  /usr/include/Geant4/G4ElectronOccupancy.hh \
-  /usr/include/Geant4/G4Element.hh \
-  /usr/include/Geant4/G4ElementTable.hh \
-  /usr/include/Geant4/G4ElementVector.hh \
-  /usr/include/Geant4/G4EnvironmentUtils.hh \
-  /usr/include/Geant4/G4Exception.hh \
-  /usr/include/Geant4/G4ExceptionSeverity.hh \
-  /usr/include/Geant4/G4GeomSplitter.hh \
-  /usr/include/Geant4/G4GlobalConfig.hh \
-  /usr/include/Geant4/G4IEEE754.hh \
-  /usr/include/Geant4/G4IonisParamElm.hh \
-  /usr/include/Geant4/G4IonisParamMat.hh \
-  /usr/include/Geant4/G4Isotope.hh \
-  /usr/include/Geant4/G4IsotopeVector.hh \
-  /usr/include/Geant4/G4Log.hh \
-  /usr/include/Geant4/G4LogicalVolume.hh \
-  /usr/include/Geant4/G4LogicalVolume.icc \
-  /usr/include/Geant4/G4LorentzVector.hh \
-  /usr/include/Geant4/G4Material.hh \
-  /usr/include/Geant4/G4MaterialPropertiesIndex.hh \
-  /usr/include/Geant4/G4MaterialPropertiesTable.hh \
-  /usr/include/Geant4/G4MaterialPropertyVector.hh \
-  /usr/include/Geant4/G4MaterialTable.hh \
-  /usr/include/Geant4/G4NavigationHistory.hh \
-  /usr/include/Geant4/G4NavigationHistory.icc \
-  /usr/include/Geant4/G4NavigationHistoryPool.hh \
-  /usr/include/Geant4/G4NavigationLevel.hh \
-  /usr/include/Geant4/G4NavigationLevel.icc \
-  /usr/include/Geant4/G4NavigationLevelRep.hh \
-  /usr/include/Geant4/G4NavigationLevelRep.icc \
-  /usr/include/Geant4/G4OrderedTable.hh \
-  /usr/include/Geant4/G4PDefManager.hh \
-  /usr/include/Geant4/G4ParticleDefinition.hh \
-  /usr/include/Geant4/G4ParticleDefinition.icc \
-  /usr/include/Geant4/G4ParticleMomentum.hh \
-  /usr/include/Geant4/G4PhysicsFreeVector.hh \
-  /usr/include/Geant4/G4PhysicsModelCatalog.hh \
-  /usr/include/Geant4/G4PhysicsVector.hh \
-  /usr/include/Geant4/G4PhysicsVector.icc \
-  /usr/include/Geant4/G4PhysicsVectorType.hh \
-  /usr/include/Geant4/G4ReferenceCountedHandle.hh \
-  /usr/include/Geant4/G4Region.hh \
-  /usr/include/Geant4/G4Region.icc \
-  /usr/include/Geant4/G4RotationMatrix.hh \
-  /usr/include/Geant4/G4SandiaTable.hh \
-  /usr/include/Geant4/G4Step.hh \
-  /usr/include/Geant4/G4Step.icc \
-  /usr/include/Geant4/G4StepPoint.hh \
-  /usr/include/Geant4/G4StepPoint.icc \
-  /usr/include/Geant4/G4StepStatus.hh \
-  /usr/include/Geant4/G4SteppingControl.hh \
-  /usr/include/Geant4/G4String.hh \
-  /usr/include/Geant4/G4String.icc \
-  /usr/include/Geant4/G4SystemOfUnits.hh \
-  /usr/include/Geant4/G4Threading.hh \
-  /usr/include/Geant4/G4ThreeVector.hh \
-  /usr/include/Geant4/G4TouchableHandle.hh \
-  /usr/include/Geant4/G4TouchableHistory.hh \
-  /usr/include/Geant4/G4TouchableHistory.icc \
-  /usr/include/Geant4/G4Track.hh \
-  /usr/include/Geant4/G4Track.icc \
-  /usr/include/Geant4/G4TrackStatus.hh \
-  /usr/include/Geant4/G4TrackVector.hh \
-  /usr/include/Geant4/G4Transform3D.hh \
-  /usr/include/Geant4/G4Types.hh \
-  /usr/include/Geant4/G4UserSteppingAction.hh \
-  /usr/include/Geant4/G4VPhysicalVolume.hh \
-  /usr/include/Geant4/G4VPhysicalVolume.icc \
-  /usr/include/Geant4/G4VTouchable.hh \
-  /usr/include/Geant4/G4VUserTrackInformation.hh \
-  /usr/include/Geant4/G4ios.hh \
-  /usr/include/Geant4/geomdefs.hh \
-  /usr/include/Geant4/geomwdefs.hh \
-  /usr/include/Geant4/globals.hh \
-  /usr/include/Geant4/pwdefs.hh \
-  /usr/include/Geant4/templates.hh \
-  /usr/include/Geant4/tls.hh \
-  /usr/include/Geant4/trkdefs.hh \
-  /usr/include/RConfigure.h \
-  /usr/include/ROOT/RConcurrentHashColl.hxx \
-  /usr/include/ROOT/RConfig.hxx \
-  /usr/include/ROOT/RRangeCast.hxx \
-  /usr/include/ROOT/RSpan.hxx \
-  /usr/include/ROOT/RVersion.hxx \
-  /usr/include/ROOT/TIOFeatures.hxx \
-  /usr/include/ROOT/TRWSpinLock.hxx \
-  /usr/include/ROOT/TSpinMutex.hxx \
-  /usr/include/ROOT/TypeTraits.hxx \
-  /usr/include/ROOT/span.hxx \
-  /usr/include/RVersion.h \
-  /usr/include/Rtypes.h \
-  /usr/include/RtypesCore.h \
-  /usr/include/TArray.h \
-  /usr/include/TArrayD.h \
-  /usr/include/TArrayI.h \
-  /usr/include/TAttFill.h \
-  /usr/include/TAttLine.h \
-  /usr/include/TAttMarker.h \
-  /usr/include/TBits.h \
-  /usr/include/TBranch.h \
-  /usr/include/TBranchCacheInfo.h \
-  /usr/include/TBuffer.h \
-  /usr/include/TClass.h \
-  /usr/include/TCollection.h \
-  /usr/include/TDataType.h \
-  /usr/include/TDatime.h \
-  /usr/include/TDictionary.h \
-  /usr/include/TDirectory.h \
-  /usr/include/TDirectoryFile.h \
-  /usr/include/TFile.h \
-  /usr/include/TGenericClassInfo.h \
-  /usr/include/TIsAProxy.h \
-  /usr/include/TIterator.h \
-  /usr/include/TList.h \
-  /usr/include/TNamed.h \
-  /usr/include/TObjArray.h \
-  /usr/include/TObject.h \
-  /usr/include/TSchemaHelper.h \
-  /usr/include/TSchemaRule.h \
-  /usr/include/TSeqCollection.h \
-  /usr/include/TStorage.h \
-  /usr/include/TString.h \
-  /usr/include/TTree.h \
-  /usr/include/TUUID.h \
-  /usr/include/TUrl.h \
-  /usr/include/TVersionCheck.h \
-  /usr/include/TVirtualIsAProxy.h \
-  /usr/include/TVirtualMutex.h \
-  /usr/include/TVirtualRWMutex.h \
-  /usr/include/TVirtualTreePlayer.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/asm/bitsperlong.h \
-  /usr/include/asm/errno.h \
-  /usr/include/asm/posix_types.h \
-  /usr/include/asm/posix_types_64.h \
-  /usr/include/asm/types.h \
-  /usr/include/assert.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/cpu-set.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/errno.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/flt-eval-method.h \
-  /usr/include/bits/fp-fast.h \
-  /usr/include/bits/fp-logb.h \
-  /usr/include/bits/iscanonical.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/libm-simd-decl-stubs.h \
-  /usr/include/bits/local_lim.h \
-  /usr/include/bits/locale.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/math-vector.h \
-  /usr/include/bits/mathcalls-helper-functions.h \
-  /usr/include/bits/mathcalls-macros.h \
-  /usr/include/bits/mathcalls-narrow.h \
-  /usr/include/bits/mathcalls.h \
-  /usr/include/bits/posix1_lim.h \
-  /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/pthread_stack_min-dynamic.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/sched.h \
-  /usr/include/bits/select-decl.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/select2.h \
-  /usr/include/bits/setjmp.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-least.h \
-  /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio.h \
-  /usr/include/bits/stdio2-decl.h \
-  /usr/include/bits/stdio2.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-bsearch.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/stdlib.h \
-  /usr/include/bits/string_fortified.h \
-  /usr/include/bits/strings_fortified.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/timex.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/error_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/bits/types/struct_itimerspec.h \
-  /usr/include/bits/types/struct_sched_param.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/struct_tm.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/types/wint_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/uio_lim.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wchar2-decl.h \
-  /usr/include/bits/wchar2.h \
-  /usr/include/bits/wctype-wchar.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/bits/xopen_lim.h \
-  /usr/include/c++/15.2.1/algorithm \
-  /usr/include/c++/15.2.1/array \
-  /usr/include/c++/15.2.1/atomic \
-  /usr/include/c++/15.2.1/backward/auto_ptr.h \
-  /usr/include/c++/15.2.1/backward/binders.h \
-  /usr/include/c++/15.2.1/bit \
-  /usr/include/c++/15.2.1/bits/algorithmfwd.h \
-  /usr/include/c++/15.2.1/bits/align.h \
-  /usr/include/c++/15.2.1/bits/alloc_traits.h \
-  /usr/include/c++/15.2.1/bits/allocated_ptr.h \
-  /usr/include/c++/15.2.1/bits/allocator.h \
-  /usr/include/c++/15.2.1/bits/atomic_base.h \
-  /usr/include/c++/15.2.1/bits/atomic_futex.h \
-  /usr/include/c++/15.2.1/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/15.2.1/bits/basic_ios.h \
-  /usr/include/c++/15.2.1/bits/basic_ios.tcc \
-  /usr/include/c++/15.2.1/bits/basic_string.h \
-  /usr/include/c++/15.2.1/bits/basic_string.tcc \
-  /usr/include/c++/15.2.1/bits/char_traits.h \
-  /usr/include/c++/15.2.1/bits/charconv.h \
-  /usr/include/c++/15.2.1/bits/chrono.h \
-  /usr/include/c++/15.2.1/bits/codecvt.h \
-  /usr/include/c++/15.2.1/bits/concept_check.h \
-  /usr/include/c++/15.2.1/bits/cpp_type_traits.h \
-  /usr/include/c++/15.2.1/bits/cxxabi_forced.h \
-  /usr/include/c++/15.2.1/bits/cxxabi_init_exception.h \
-  /usr/include/c++/15.2.1/bits/enable_special_members.h \
-  /usr/include/c++/15.2.1/bits/erase_if.h \
-  /usr/include/c++/15.2.1/bits/exception.h \
-  /usr/include/c++/15.2.1/bits/exception_defines.h \
-  /usr/include/c++/15.2.1/bits/exception_ptr.h \
-  /usr/include/c++/15.2.1/bits/fstream.tcc \
-  /usr/include/c++/15.2.1/bits/functexcept.h \
-  /usr/include/c++/15.2.1/bits/functional_hash.h \
-  /usr/include/c++/15.2.1/bits/hash_bytes.h \
-  /usr/include/c++/15.2.1/bits/hashtable.h \
-  /usr/include/c++/15.2.1/bits/hashtable_policy.h \
-  /usr/include/c++/15.2.1/bits/invoke.h \
-  /usr/include/c++/15.2.1/bits/ios_base.h \
-  /usr/include/c++/15.2.1/bits/istream.tcc \
-  /usr/include/c++/15.2.1/bits/locale_classes.h \
-  /usr/include/c++/15.2.1/bits/locale_classes.tcc \
-  /usr/include/c++/15.2.1/bits/locale_conv.h \
-  /usr/include/c++/15.2.1/bits/locale_facets.h \
-  /usr/include/c++/15.2.1/bits/locale_facets.tcc \
-  /usr/include/c++/15.2.1/bits/locale_facets_nonio.h \
-  /usr/include/c++/15.2.1/bits/locale_facets_nonio.tcc \
-  /usr/include/c++/15.2.1/bits/localefwd.h \
-  /usr/include/c++/15.2.1/bits/memory_resource.h \
-  /usr/include/c++/15.2.1/bits/memoryfwd.h \
-  /usr/include/c++/15.2.1/bits/move.h \
-  /usr/include/c++/15.2.1/bits/nested_exception.h \
-  /usr/include/c++/15.2.1/bits/new_allocator.h \
-  /usr/include/c++/15.2.1/bits/node_handle.h \
-  /usr/include/c++/15.2.1/bits/ostream.h \
-  /usr/include/c++/15.2.1/bits/ostream.tcc \
-  /usr/include/c++/15.2.1/bits/ostream_insert.h \
-  /usr/include/c++/15.2.1/bits/parse_numbers.h \
-  /usr/include/c++/15.2.1/bits/postypes.h \
-  /usr/include/c++/15.2.1/bits/predefined_ops.h \
-  /usr/include/c++/15.2.1/bits/ptr_traits.h \
-  /usr/include/c++/15.2.1/bits/quoted_string.h \
-  /usr/include/c++/15.2.1/bits/range_access.h \
-  /usr/include/c++/15.2.1/bits/refwrap.h \
-  /usr/include/c++/15.2.1/bits/requires_hosted.h \
-  /usr/include/c++/15.2.1/bits/shared_ptr.h \
-  /usr/include/c++/15.2.1/bits/shared_ptr_atomic.h \
-  /usr/include/c++/15.2.1/bits/shared_ptr_base.h \
-  /usr/include/c++/15.2.1/bits/specfun.h \
-  /usr/include/c++/15.2.1/bits/sstream.tcc \
-  /usr/include/c++/15.2.1/bits/std_abs.h \
-  /usr/include/c++/15.2.1/bits/std_function.h \
-  /usr/include/c++/15.2.1/bits/std_mutex.h \
-  /usr/include/c++/15.2.1/bits/std_thread.h \
-  /usr/include/c++/15.2.1/bits/stl_algo.h \
-  /usr/include/c++/15.2.1/bits/stl_algobase.h \
-  /usr/include/c++/15.2.1/bits/stl_bvector.h \
-  /usr/include/c++/15.2.1/bits/stl_construct.h \
-  /usr/include/c++/15.2.1/bits/stl_function.h \
-  /usr/include/c++/15.2.1/bits/stl_heap.h \
-  /usr/include/c++/15.2.1/bits/stl_iterator.h \
-  /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h \
-  /usr/include/c++/15.2.1/bits/stl_map.h \
-  /usr/include/c++/15.2.1/bits/stl_multimap.h \
-  /usr/include/c++/15.2.1/bits/stl_pair.h \
-  /usr/include/c++/15.2.1/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/15.2.1/bits/stl_relops.h \
-  /usr/include/c++/15.2.1/bits/stl_tempbuf.h \
-  /usr/include/c++/15.2.1/bits/stl_tree.h \
-  /usr/include/c++/15.2.1/bits/stl_uninitialized.h \
-  /usr/include/c++/15.2.1/bits/stl_vector.h \
-  /usr/include/c++/15.2.1/bits/stream_iterator.h \
-  /usr/include/c++/15.2.1/bits/streambuf.tcc \
-  /usr/include/c++/15.2.1/bits/streambuf_iterator.h \
-  /usr/include/c++/15.2.1/bits/string_view.tcc \
-  /usr/include/c++/15.2.1/bits/stringfwd.h \
-  /usr/include/c++/15.2.1/bits/this_thread_sleep.h \
-  /usr/include/c++/15.2.1/bits/uniform_int_dist.h \
-  /usr/include/c++/15.2.1/bits/unique_lock.h \
-  /usr/include/c++/15.2.1/bits/unique_ptr.h \
-  /usr/include/c++/15.2.1/bits/unordered_map.h \
-  /usr/include/c++/15.2.1/bits/unordered_set.h \
-  /usr/include/c++/15.2.1/bits/uses_allocator.h \
-  /usr/include/c++/15.2.1/bits/uses_allocator_args.h \
-  /usr/include/c++/15.2.1/bits/utility.h \
-  /usr/include/c++/15.2.1/bits/vector.tcc \
-  /usr/include/c++/15.2.1/bits/version.h \
-  /usr/include/c++/15.2.1/cassert \
-  /usr/include/c++/15.2.1/cctype \
-  /usr/include/c++/15.2.1/cerrno \
-  /usr/include/c++/15.2.1/chrono \
-  /usr/include/c++/15.2.1/climits \
-  /usr/include/c++/15.2.1/clocale \
-  /usr/include/c++/15.2.1/cmath \
-  /usr/include/c++/15.2.1/compare \
-  /usr/include/c++/15.2.1/complex \
-  /usr/include/c++/15.2.1/concepts \
-  /usr/include/c++/15.2.1/condition_variable \
-  /usr/include/c++/15.2.1/cstdarg \
-  /usr/include/c++/15.2.1/cstddef \
-  /usr/include/c++/15.2.1/cstdint \
-  /usr/include/c++/15.2.1/cstdio \
-  /usr/include/c++/15.2.1/cstdlib \
-  /usr/include/c++/15.2.1/cstring \
-  /usr/include/c++/15.2.1/ctime \
-  /usr/include/c++/15.2.1/cwchar \
-  /usr/include/c++/15.2.1/cwctype \
-  /usr/include/c++/15.2.1/debug/assertions.h \
-  /usr/include/c++/15.2.1/debug/debug.h \
-  /usr/include/c++/15.2.1/exception \
-  /usr/include/c++/15.2.1/ext/aligned_buffer.h \
-  /usr/include/c++/15.2.1/ext/alloc_traits.h \
-  /usr/include/c++/15.2.1/ext/atomicity.h \
-  /usr/include/c++/15.2.1/ext/concurrence.h \
-  /usr/include/c++/15.2.1/ext/numeric_traits.h \
-  /usr/include/c++/15.2.1/ext/string_conversions.h \
-  /usr/include/c++/15.2.1/ext/type_traits.h \
-  /usr/include/c++/15.2.1/fstream \
-  /usr/include/c++/15.2.1/functional \
-  /usr/include/c++/15.2.1/future \
-  /usr/include/c++/15.2.1/initializer_list \
-  /usr/include/c++/15.2.1/iomanip \
-  /usr/include/c++/15.2.1/ios \
-  /usr/include/c++/15.2.1/iosfwd \
-  /usr/include/c++/15.2.1/iostream \
-  /usr/include/c++/15.2.1/istream \
-  /usr/include/c++/15.2.1/iterator \
-  /usr/include/c++/15.2.1/limits \
-  /usr/include/c++/15.2.1/locale \
-  /usr/include/c++/15.2.1/map \
-  /usr/include/c++/15.2.1/memory \
-  /usr/include/c++/15.2.1/mutex \
-  /usr/include/c++/15.2.1/new \
-  /usr/include/c++/15.2.1/optional \
-  /usr/include/c++/15.2.1/ostream \
-  /usr/include/c++/15.2.1/pstl/execution_defs.h \
-  /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/15.2.1/pstl/glue_memory_defs.h \
-  /usr/include/c++/15.2.1/pstl/pstl_config.h \
-  /usr/include/c++/15.2.1/ratio \
-  /usr/include/c++/15.2.1/sstream \
-  /usr/include/c++/15.2.1/stdexcept \
-  /usr/include/c++/15.2.1/stdlib.h \
-  /usr/include/c++/15.2.1/streambuf \
-  /usr/include/c++/15.2.1/string \
-  /usr/include/c++/15.2.1/string_view \
-  /usr/include/c++/15.2.1/system_error \
-  /usr/include/c++/15.2.1/thread \
-  /usr/include/c++/15.2.1/tr1/bessel_function.tcc \
-  /usr/include/c++/15.2.1/tr1/beta_function.tcc \
-  /usr/include/c++/15.2.1/tr1/ell_integral.tcc \
-  /usr/include/c++/15.2.1/tr1/exp_integral.tcc \
-  /usr/include/c++/15.2.1/tr1/gamma.tcc \
-  /usr/include/c++/15.2.1/tr1/hypergeometric.tcc \
-  /usr/include/c++/15.2.1/tr1/legendre_function.tcc \
-  /usr/include/c++/15.2.1/tr1/modified_bessel_func.tcc \
-  /usr/include/c++/15.2.1/tr1/poly_hermite.tcc \
-  /usr/include/c++/15.2.1/tr1/poly_laguerre.tcc \
-  /usr/include/c++/15.2.1/tr1/riemann_zeta.tcc \
-  /usr/include/c++/15.2.1/tr1/special_function_util.h \
-  /usr/include/c++/15.2.1/tuple \
-  /usr/include/c++/15.2.1/type_traits \
-  /usr/include/c++/15.2.1/typeinfo \
-  /usr/include/c++/15.2.1/unordered_map \
-  /usr/include/c++/15.2.1/unordered_set \
-  /usr/include/c++/15.2.1/utility \
-  /usr/include/c++/15.2.1/vector \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/error_constants.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/messages_members.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/time_members.h \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/gnu/stubs-64.h \
-  /usr/include/gnu/stubs.h \
-  /usr/include/libintl.h \
-  /usr/include/limits.h \
-  /usr/include/linux/errno.h \
-  /usr/include/linux/limits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/sched/types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/linux/types.h \
-  /usr/include/locale.h \
-  /usr/include/math.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/snprintf.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/strlcpy.h \
-  /usr/include/strtok.h \
-  /usr/include/sys/cdefs.h \
-  /usr/include/sys/select.h \
-  /usr/include/sys/single_threaded.h \
-  /usr/include/sys/types.h \
-  /usr/include/time.h \
-  /usr/include/wchar.h \
-  /usr/include/wctype.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
-
-CMakeFiles/geant_plate.dir/src/Thin_layers.cc.o: /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/Thin_layers.cc \
-  /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/Thin_layers.hh \
-  /usr/include/CLHEP/Geometry/BasicVector3D.h \
-  /usr/include/CLHEP/Geometry/Normal3D.h \
-  /usr/include/CLHEP/Geometry/Point3D.h \
-  /usr/include/CLHEP/Geometry/Transform3D.h \
-  /usr/include/CLHEP/Geometry/Transform3D.icc \
-  /usr/include/CLHEP/Geometry/Vector3D.h \
-  /usr/include/CLHEP/Geometry/defs.h \
-  /usr/include/CLHEP/Units/PhysicalConstants.h \
-  /usr/include/CLHEP/Units/SystemOfUnits.h \
-  /usr/include/CLHEP/Units/defs.h \
-  /usr/include/CLHEP/Vector/AxisAngle.h \
-  /usr/include/CLHEP/Vector/AxisAngle.icc \
-  /usr/include/CLHEP/Vector/LorentzVector.h \
-  /usr/include/CLHEP/Vector/LorentzVector.icc \
-  /usr/include/CLHEP/Vector/Rotation.h \
-  /usr/include/CLHEP/Vector/Rotation.icc \
-  /usr/include/CLHEP/Vector/RotationInterfaces.h \
-  /usr/include/CLHEP/Vector/RotationInterfaces.icc \
-  /usr/include/CLHEP/Vector/RotationX.h \
-  /usr/include/CLHEP/Vector/RotationX.icc \
-  /usr/include/CLHEP/Vector/RotationY.h \
-  /usr/include/CLHEP/Vector/RotationY.icc \
-  /usr/include/CLHEP/Vector/RotationZ.h \
-  /usr/include/CLHEP/Vector/RotationZ.icc \
-  /usr/include/CLHEP/Vector/ThreeVector.h \
-  /usr/include/CLHEP/Vector/ThreeVector.icc \
-  /usr/include/CLHEP/Vector/TwoVector.h \
-  /usr/include/CLHEP/Vector/TwoVector.icc \
-  /usr/include/CLHEP/Vector/ZMxpv.h \
-  /usr/include/CLHEP/Vector/defs.h \
-  /usr/include/Geant4/G4AutoLock.hh \
-  /usr/include/Geant4/G4Box.hh \
-  /usr/include/Geant4/G4Box.icc \
-  /usr/include/Geant4/G4CSGSolid.hh \
-  /usr/include/Geant4/G4DataVector.hh \
-  /usr/include/Geant4/G4DataVector.icc \
-  /usr/include/Geant4/G4DensityEffectCalculator.hh \
-  /usr/include/Geant4/G4Element.hh \
-  /usr/include/Geant4/G4ElementTable.hh \
-  /usr/include/Geant4/G4ElementVector.hh \
-  /usr/include/Geant4/G4EnvironmentUtils.hh \
-  /usr/include/Geant4/G4Exception.hh \
-  /usr/include/Geant4/G4ExceptionSeverity.hh \
-  /usr/include/Geant4/G4GeomConfig.hh \
-  /usr/include/Geant4/G4GeomSplitter.hh \
-  /usr/include/Geant4/G4GeomTypes.hh \
-  /usr/include/Geant4/G4GlobalConfig.hh \
-  /usr/include/Geant4/G4IEEE754.hh \
-  /usr/include/Geant4/G4IonisParamElm.hh \
-  /usr/include/Geant4/G4IonisParamMat.hh \
-  /usr/include/Geant4/G4Isotope.hh \
-  /usr/include/Geant4/G4IsotopeVector.hh \
-  /usr/include/Geant4/G4Log.hh \
-  /usr/include/Geant4/G4LogicalVolume.hh \
-  /usr/include/Geant4/G4LogicalVolume.icc \
-  /usr/include/Geant4/G4Material.hh \
-  /usr/include/Geant4/G4MaterialPropertiesIndex.hh \
-  /usr/include/Geant4/G4MaterialPropertiesTable.hh \
-  /usr/include/Geant4/G4MaterialPropertyVector.hh \
-  /usr/include/Geant4/G4MaterialTable.hh \
-  /usr/include/Geant4/G4Normal3D.hh \
-  /usr/include/Geant4/G4OrderedTable.hh \
-  /usr/include/Geant4/G4PVPlacement.hh \
-  /usr/include/Geant4/G4PhysicsFreeVector.hh \
-  /usr/include/Geant4/G4PhysicsVector.hh \
-  /usr/include/Geant4/G4PhysicsVector.icc \
-  /usr/include/Geant4/G4PhysicsVectorType.hh \
-  /usr/include/Geant4/G4Point3D.hh \
-  /usr/include/Geant4/G4Polyhedron.hh \
-  /usr/include/Geant4/G4Region.hh \
-  /usr/include/Geant4/G4Region.icc \
-  /usr/include/Geant4/G4RotationMatrix.hh \
-  /usr/include/Geant4/G4SandiaTable.hh \
-  /usr/include/Geant4/G4String.hh \
-  /usr/include/Geant4/G4String.icc \
-  /usr/include/Geant4/G4Threading.hh \
-  /usr/include/Geant4/G4ThreeVector.hh \
-  /usr/include/Geant4/G4Transform3D.hh \
-  /usr/include/Geant4/G4TwoVector.hh \
-  /usr/include/Geant4/G4Types.hh \
-  /usr/include/Geant4/G4VPhysicalVolume.hh \
-  /usr/include/Geant4/G4VPhysicalVolume.icc \
-  /usr/include/Geant4/G4VSolid.hh \
-  /usr/include/Geant4/G4VSolid.icc \
-  /usr/include/Geant4/G4Visible.hh \
-  /usr/include/Geant4/G4Visible.icc \
-  /usr/include/Geant4/G4ios.hh \
-  /usr/include/Geant4/HepPolyhedron.h \
-  /usr/include/Geant4/geomdefs.hh \
-  /usr/include/Geant4/geomwdefs.hh \
-  /usr/include/Geant4/globals.hh \
-  /usr/include/Geant4/templates.hh \
-  /usr/include/Geant4/tls.hh \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/asm/bitsperlong.h \
-  /usr/include/asm/errno.h \
-  /usr/include/asm/posix_types.h \
-  /usr/include/asm/posix_types_64.h \
-  /usr/include/asm/types.h \
-  /usr/include/assert.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/cpu-set.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/errno.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/flt-eval-method.h \
-  /usr/include/bits/fp-fast.h \
-  /usr/include/bits/fp-logb.h \
-  /usr/include/bits/iscanonical.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/libm-simd-decl-stubs.h \
-  /usr/include/bits/local_lim.h \
-  /usr/include/bits/locale.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/math-vector.h \
-  /usr/include/bits/mathcalls-helper-functions.h \
-  /usr/include/bits/mathcalls-macros.h \
-  /usr/include/bits/mathcalls-narrow.h \
-  /usr/include/bits/mathcalls.h \
-  /usr/include/bits/posix1_lim.h \
-  /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/pthread_stack_min-dynamic.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/sched.h \
-  /usr/include/bits/select-decl.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/select2.h \
-  /usr/include/bits/setjmp.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-least.h \
-  /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio.h \
-  /usr/include/bits/stdio2-decl.h \
-  /usr/include/bits/stdio2.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-bsearch.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/stdlib.h \
-  /usr/include/bits/string_fortified.h \
-  /usr/include/bits/strings_fortified.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/timex.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/error_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/bits/types/struct_itimerspec.h \
-  /usr/include/bits/types/struct_sched_param.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/struct_tm.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/types/wint_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/uio_lim.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wchar2-decl.h \
-  /usr/include/bits/wchar2.h \
-  /usr/include/bits/wctype-wchar.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/bits/xopen_lim.h \
-  /usr/include/c++/15.2.1/algorithm \
-  /usr/include/c++/15.2.1/atomic \
-  /usr/include/c++/15.2.1/backward/auto_ptr.h \
-  /usr/include/c++/15.2.1/backward/binders.h \
-  /usr/include/c++/15.2.1/bit \
-  /usr/include/c++/15.2.1/bits/algorithmfwd.h \
-  /usr/include/c++/15.2.1/bits/align.h \
-  /usr/include/c++/15.2.1/bits/alloc_traits.h \
-  /usr/include/c++/15.2.1/bits/allocated_ptr.h \
-  /usr/include/c++/15.2.1/bits/allocator.h \
-  /usr/include/c++/15.2.1/bits/atomic_base.h \
-  /usr/include/c++/15.2.1/bits/atomic_futex.h \
-  /usr/include/c++/15.2.1/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/15.2.1/bits/basic_ios.h \
-  /usr/include/c++/15.2.1/bits/basic_ios.tcc \
-  /usr/include/c++/15.2.1/bits/basic_string.h \
-  /usr/include/c++/15.2.1/bits/basic_string.tcc \
-  /usr/include/c++/15.2.1/bits/char_traits.h \
-  /usr/include/c++/15.2.1/bits/charconv.h \
-  /usr/include/c++/15.2.1/bits/chrono.h \
-  /usr/include/c++/15.2.1/bits/codecvt.h \
-  /usr/include/c++/15.2.1/bits/concept_check.h \
-  /usr/include/c++/15.2.1/bits/cpp_type_traits.h \
-  /usr/include/c++/15.2.1/bits/cxxabi_forced.h \
-  /usr/include/c++/15.2.1/bits/cxxabi_init_exception.h \
-  /usr/include/c++/15.2.1/bits/erase_if.h \
-  /usr/include/c++/15.2.1/bits/exception.h \
-  /usr/include/c++/15.2.1/bits/exception_defines.h \
-  /usr/include/c++/15.2.1/bits/exception_ptr.h \
-  /usr/include/c++/15.2.1/bits/fstream.tcc \
-  /usr/include/c++/15.2.1/bits/functexcept.h \
-  /usr/include/c++/15.2.1/bits/functional_hash.h \
-  /usr/include/c++/15.2.1/bits/hash_bytes.h \
-  /usr/include/c++/15.2.1/bits/invoke.h \
-  /usr/include/c++/15.2.1/bits/ios_base.h \
-  /usr/include/c++/15.2.1/bits/istream.tcc \
-  /usr/include/c++/15.2.1/bits/locale_classes.h \
-  /usr/include/c++/15.2.1/bits/locale_classes.tcc \
-  /usr/include/c++/15.2.1/bits/locale_conv.h \
-  /usr/include/c++/15.2.1/bits/locale_facets.h \
-  /usr/include/c++/15.2.1/bits/locale_facets.tcc \
-  /usr/include/c++/15.2.1/bits/locale_facets_nonio.h \
-  /usr/include/c++/15.2.1/bits/locale_facets_nonio.tcc \
-  /usr/include/c++/15.2.1/bits/localefwd.h \
-  /usr/include/c++/15.2.1/bits/memory_resource.h \
-  /usr/include/c++/15.2.1/bits/memoryfwd.h \
-  /usr/include/c++/15.2.1/bits/move.h \
-  /usr/include/c++/15.2.1/bits/nested_exception.h \
-  /usr/include/c++/15.2.1/bits/new_allocator.h \
-  /usr/include/c++/15.2.1/bits/node_handle.h \
-  /usr/include/c++/15.2.1/bits/ostream.h \
-  /usr/include/c++/15.2.1/bits/ostream.tcc \
-  /usr/include/c++/15.2.1/bits/ostream_insert.h \
-  /usr/include/c++/15.2.1/bits/parse_numbers.h \
-  /usr/include/c++/15.2.1/bits/postypes.h \
-  /usr/include/c++/15.2.1/bits/predefined_ops.h \
-  /usr/include/c++/15.2.1/bits/ptr_traits.h \
-  /usr/include/c++/15.2.1/bits/quoted_string.h \
-  /usr/include/c++/15.2.1/bits/range_access.h \
-  /usr/include/c++/15.2.1/bits/refwrap.h \
-  /usr/include/c++/15.2.1/bits/requires_hosted.h \
-  /usr/include/c++/15.2.1/bits/shared_ptr.h \
-  /usr/include/c++/15.2.1/bits/shared_ptr_atomic.h \
-  /usr/include/c++/15.2.1/bits/shared_ptr_base.h \
-  /usr/include/c++/15.2.1/bits/specfun.h \
-  /usr/include/c++/15.2.1/bits/sstream.tcc \
-  /usr/include/c++/15.2.1/bits/std_abs.h \
-  /usr/include/c++/15.2.1/bits/std_function.h \
-  /usr/include/c++/15.2.1/bits/std_mutex.h \
-  /usr/include/c++/15.2.1/bits/std_thread.h \
-  /usr/include/c++/15.2.1/bits/stl_algo.h \
-  /usr/include/c++/15.2.1/bits/stl_algobase.h \
-  /usr/include/c++/15.2.1/bits/stl_bvector.h \
-  /usr/include/c++/15.2.1/bits/stl_construct.h \
-  /usr/include/c++/15.2.1/bits/stl_function.h \
-  /usr/include/c++/15.2.1/bits/stl_heap.h \
-  /usr/include/c++/15.2.1/bits/stl_iterator.h \
-  /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h \
-  /usr/include/c++/15.2.1/bits/stl_map.h \
-  /usr/include/c++/15.2.1/bits/stl_multimap.h \
-  /usr/include/c++/15.2.1/bits/stl_pair.h \
-  /usr/include/c++/15.2.1/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/15.2.1/bits/stl_tempbuf.h \
-  /usr/include/c++/15.2.1/bits/stl_tree.h \
-  /usr/include/c++/15.2.1/bits/stl_uninitialized.h \
-  /usr/include/c++/15.2.1/bits/stl_vector.h \
-  /usr/include/c++/15.2.1/bits/streambuf.tcc \
-  /usr/include/c++/15.2.1/bits/streambuf_iterator.h \
-  /usr/include/c++/15.2.1/bits/string_view.tcc \
-  /usr/include/c++/15.2.1/bits/stringfwd.h \
-  /usr/include/c++/15.2.1/bits/this_thread_sleep.h \
-  /usr/include/c++/15.2.1/bits/uniform_int_dist.h \
-  /usr/include/c++/15.2.1/bits/unique_lock.h \
-  /usr/include/c++/15.2.1/bits/unique_ptr.h \
-  /usr/include/c++/15.2.1/bits/uses_allocator.h \
-  /usr/include/c++/15.2.1/bits/uses_allocator_args.h \
-  /usr/include/c++/15.2.1/bits/utility.h \
-  /usr/include/c++/15.2.1/bits/vector.tcc \
-  /usr/include/c++/15.2.1/bits/version.h \
-  /usr/include/c++/15.2.1/cctype \
-  /usr/include/c++/15.2.1/cerrno \
-  /usr/include/c++/15.2.1/chrono \
-  /usr/include/c++/15.2.1/climits \
-  /usr/include/c++/15.2.1/clocale \
-  /usr/include/c++/15.2.1/cmath \
-  /usr/include/c++/15.2.1/complex \
-  /usr/include/c++/15.2.1/concepts \
-  /usr/include/c++/15.2.1/condition_variable \
-  /usr/include/c++/15.2.1/cstddef \
-  /usr/include/c++/15.2.1/cstdint \
-  /usr/include/c++/15.2.1/cstdio \
-  /usr/include/c++/15.2.1/cstdlib \
-  /usr/include/c++/15.2.1/cstring \
-  /usr/include/c++/15.2.1/ctime \
-  /usr/include/c++/15.2.1/cwchar \
-  /usr/include/c++/15.2.1/cwctype \
-  /usr/include/c++/15.2.1/debug/assertions.h \
-  /usr/include/c++/15.2.1/debug/debug.h \
-  /usr/include/c++/15.2.1/exception \
-  /usr/include/c++/15.2.1/ext/aligned_buffer.h \
-  /usr/include/c++/15.2.1/ext/alloc_traits.h \
-  /usr/include/c++/15.2.1/ext/atomicity.h \
-  /usr/include/c++/15.2.1/ext/concurrence.h \
-  /usr/include/c++/15.2.1/ext/numeric_traits.h \
-  /usr/include/c++/15.2.1/ext/string_conversions.h \
-  /usr/include/c++/15.2.1/ext/type_traits.h \
-  /usr/include/c++/15.2.1/fstream \
-  /usr/include/c++/15.2.1/future \
-  /usr/include/c++/15.2.1/initializer_list \
-  /usr/include/c++/15.2.1/iomanip \
-  /usr/include/c++/15.2.1/ios \
-  /usr/include/c++/15.2.1/iosfwd \
-  /usr/include/c++/15.2.1/iostream \
-  /usr/include/c++/15.2.1/istream \
-  /usr/include/c++/15.2.1/limits \
-  /usr/include/c++/15.2.1/locale \
-  /usr/include/c++/15.2.1/map \
-  /usr/include/c++/15.2.1/memory \
-  /usr/include/c++/15.2.1/mutex \
-  /usr/include/c++/15.2.1/new \
-  /usr/include/c++/15.2.1/ostream \
-  /usr/include/c++/15.2.1/pstl/execution_defs.h \
-  /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/15.2.1/pstl/glue_memory_defs.h \
-  /usr/include/c++/15.2.1/pstl/pstl_config.h \
-  /usr/include/c++/15.2.1/ratio \
-  /usr/include/c++/15.2.1/sstream \
-  /usr/include/c++/15.2.1/stdexcept \
-  /usr/include/c++/15.2.1/streambuf \
-  /usr/include/c++/15.2.1/string \
-  /usr/include/c++/15.2.1/string_view \
-  /usr/include/c++/15.2.1/system_error \
-  /usr/include/c++/15.2.1/thread \
-  /usr/include/c++/15.2.1/tr1/bessel_function.tcc \
-  /usr/include/c++/15.2.1/tr1/beta_function.tcc \
-  /usr/include/c++/15.2.1/tr1/ell_integral.tcc \
-  /usr/include/c++/15.2.1/tr1/exp_integral.tcc \
-  /usr/include/c++/15.2.1/tr1/gamma.tcc \
-  /usr/include/c++/15.2.1/tr1/hypergeometric.tcc \
-  /usr/include/c++/15.2.1/tr1/legendre_function.tcc \
-  /usr/include/c++/15.2.1/tr1/modified_bessel_func.tcc \
-  /usr/include/c++/15.2.1/tr1/poly_hermite.tcc \
-  /usr/include/c++/15.2.1/tr1/poly_laguerre.tcc \
-  /usr/include/c++/15.2.1/tr1/riemann_zeta.tcc \
-  /usr/include/c++/15.2.1/tr1/special_function_util.h \
-  /usr/include/c++/15.2.1/tuple \
-  /usr/include/c++/15.2.1/type_traits \
-  /usr/include/c++/15.2.1/typeinfo \
-  /usr/include/c++/15.2.1/vector \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/error_constants.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/messages_members.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/time_members.h \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/gnu/stubs-64.h \
-  /usr/include/gnu/stubs.h \
-  /usr/include/libintl.h \
-  /usr/include/limits.h \
-  /usr/include/linux/errno.h \
-  /usr/include/linux/limits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/sched/types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/linux/types.h \
-  /usr/include/locale.h \
-  /usr/include/math.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/sys/cdefs.h \
-  /usr/include/sys/select.h \
-  /usr/include/sys/single_threaded.h \
-  /usr/include/sys/types.h \
-  /usr/include/time.h \
-  /usr/include/wchar.h \
-  /usr/include/wctype.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
-
-CMakeFiles/geant_plate.dir/src/Wide_layers.cc.o: /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/Wide_layers.cc \
-  /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/Wide_layers.hh \
-  /usr/include/CLHEP/Geometry/BasicVector3D.h \
-  /usr/include/CLHEP/Geometry/Normal3D.h \
-  /usr/include/CLHEP/Geometry/Point3D.h \
-  /usr/include/CLHEP/Geometry/Transform3D.h \
-  /usr/include/CLHEP/Geometry/Transform3D.icc \
-  /usr/include/CLHEP/Geometry/Vector3D.h \
-  /usr/include/CLHEP/Geometry/defs.h \
-  /usr/include/CLHEP/Units/PhysicalConstants.h \
-  /usr/include/CLHEP/Units/SystemOfUnits.h \
-  /usr/include/CLHEP/Units/defs.h \
-  /usr/include/CLHEP/Vector/AxisAngle.h \
-  /usr/include/CLHEP/Vector/AxisAngle.icc \
-  /usr/include/CLHEP/Vector/LorentzVector.h \
-  /usr/include/CLHEP/Vector/LorentzVector.icc \
-  /usr/include/CLHEP/Vector/Rotation.h \
-  /usr/include/CLHEP/Vector/Rotation.icc \
-  /usr/include/CLHEP/Vector/RotationInterfaces.h \
-  /usr/include/CLHEP/Vector/RotationInterfaces.icc \
-  /usr/include/CLHEP/Vector/RotationX.h \
-  /usr/include/CLHEP/Vector/RotationX.icc \
-  /usr/include/CLHEP/Vector/RotationY.h \
-  /usr/include/CLHEP/Vector/RotationY.icc \
-  /usr/include/CLHEP/Vector/RotationZ.h \
-  /usr/include/CLHEP/Vector/RotationZ.icc \
-  /usr/include/CLHEP/Vector/ThreeVector.h \
-  /usr/include/CLHEP/Vector/ThreeVector.icc \
-  /usr/include/CLHEP/Vector/TwoVector.h \
-  /usr/include/CLHEP/Vector/TwoVector.icc \
-  /usr/include/CLHEP/Vector/ZMxpv.h \
-  /usr/include/CLHEP/Vector/defs.h \
-  /usr/include/Geant4/G4AutoLock.hh \
-  /usr/include/Geant4/G4Box.hh \
-  /usr/include/Geant4/G4Box.icc \
-  /usr/include/Geant4/G4CSGSolid.hh \
-  /usr/include/Geant4/G4DataVector.hh \
-  /usr/include/Geant4/G4DataVector.icc \
-  /usr/include/Geant4/G4DensityEffectCalculator.hh \
-  /usr/include/Geant4/G4Element.hh \
-  /usr/include/Geant4/G4ElementTable.hh \
-  /usr/include/Geant4/G4ElementVector.hh \
-  /usr/include/Geant4/G4EnvironmentUtils.hh \
-  /usr/include/Geant4/G4Exception.hh \
-  /usr/include/Geant4/G4ExceptionSeverity.hh \
-  /usr/include/Geant4/G4GeomConfig.hh \
-  /usr/include/Geant4/G4GeomSplitter.hh \
-  /usr/include/Geant4/G4GeomTypes.hh \
-  /usr/include/Geant4/G4GlobalConfig.hh \
-  /usr/include/Geant4/G4IEEE754.hh \
-  /usr/include/Geant4/G4IonisParamElm.hh \
-  /usr/include/Geant4/G4IonisParamMat.hh \
-  /usr/include/Geant4/G4Isotope.hh \
-  /usr/include/Geant4/G4IsotopeVector.hh \
-  /usr/include/Geant4/G4Log.hh \
-  /usr/include/Geant4/G4LogicalVolume.hh \
-  /usr/include/Geant4/G4LogicalVolume.icc \
-  /usr/include/Geant4/G4Material.hh \
-  /usr/include/Geant4/G4MaterialPropertiesIndex.hh \
-  /usr/include/Geant4/G4MaterialPropertiesTable.hh \
-  /usr/include/Geant4/G4MaterialPropertyVector.hh \
-  /usr/include/Geant4/G4MaterialTable.hh \
-  /usr/include/Geant4/G4Normal3D.hh \
-  /usr/include/Geant4/G4OrderedTable.hh \
-  /usr/include/Geant4/G4PVPlacement.hh \
-  /usr/include/Geant4/G4PhysicsFreeVector.hh \
-  /usr/include/Geant4/G4PhysicsVector.hh \
-  /usr/include/Geant4/G4PhysicsVector.icc \
-  /usr/include/Geant4/G4PhysicsVectorType.hh \
-  /usr/include/Geant4/G4Point3D.hh \
-  /usr/include/Geant4/G4Polyhedron.hh \
-  /usr/include/Geant4/G4Region.hh \
-  /usr/include/Geant4/G4Region.icc \
-  /usr/include/Geant4/G4RotationMatrix.hh \
-  /usr/include/Geant4/G4SandiaTable.hh \
-  /usr/include/Geant4/G4String.hh \
-  /usr/include/Geant4/G4String.icc \
-  /usr/include/Geant4/G4Threading.hh \
-  /usr/include/Geant4/G4ThreeVector.hh \
-  /usr/include/Geant4/G4Transform3D.hh \
-  /usr/include/Geant4/G4TwoVector.hh \
-  /usr/include/Geant4/G4Types.hh \
-  /usr/include/Geant4/G4VPhysicalVolume.hh \
-  /usr/include/Geant4/G4VPhysicalVolume.icc \
-  /usr/include/Geant4/G4VSolid.hh \
-  /usr/include/Geant4/G4VSolid.icc \
-  /usr/include/Geant4/G4Visible.hh \
-  /usr/include/Geant4/G4Visible.icc \
-  /usr/include/Geant4/G4ios.hh \
-  /usr/include/Geant4/HepPolyhedron.h \
-  /usr/include/Geant4/geomdefs.hh \
-  /usr/include/Geant4/geomwdefs.hh \
-  /usr/include/Geant4/globals.hh \
-  /usr/include/Geant4/templates.hh \
-  /usr/include/Geant4/tls.hh \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/asm/bitsperlong.h \
-  /usr/include/asm/errno.h \
-  /usr/include/asm/posix_types.h \
-  /usr/include/asm/posix_types_64.h \
-  /usr/include/asm/types.h \
-  /usr/include/assert.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/cpu-set.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/errno.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/flt-eval-method.h \
-  /usr/include/bits/fp-fast.h \
-  /usr/include/bits/fp-logb.h \
-  /usr/include/bits/iscanonical.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/libm-simd-decl-stubs.h \
-  /usr/include/bits/local_lim.h \
-  /usr/include/bits/locale.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/math-vector.h \
-  /usr/include/bits/mathcalls-helper-functions.h \
-  /usr/include/bits/mathcalls-macros.h \
-  /usr/include/bits/mathcalls-narrow.h \
-  /usr/include/bits/mathcalls.h \
-  /usr/include/bits/posix1_lim.h \
-  /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/pthread_stack_min-dynamic.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/sched.h \
-  /usr/include/bits/select-decl.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/select2.h \
-  /usr/include/bits/setjmp.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-least.h \
-  /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio.h \
-  /usr/include/bits/stdio2-decl.h \
-  /usr/include/bits/stdio2.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-bsearch.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/stdlib.h \
-  /usr/include/bits/string_fortified.h \
-  /usr/include/bits/strings_fortified.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/timex.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/error_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/bits/types/struct_itimerspec.h \
-  /usr/include/bits/types/struct_sched_param.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/struct_tm.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/types/wint_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/uio_lim.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wchar2-decl.h \
-  /usr/include/bits/wchar2.h \
-  /usr/include/bits/wctype-wchar.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/bits/xopen_lim.h \
-  /usr/include/c++/15.2.1/algorithm \
-  /usr/include/c++/15.2.1/atomic \
-  /usr/include/c++/15.2.1/backward/auto_ptr.h \
-  /usr/include/c++/15.2.1/backward/binders.h \
-  /usr/include/c++/15.2.1/bit \
-  /usr/include/c++/15.2.1/bits/algorithmfwd.h \
-  /usr/include/c++/15.2.1/bits/align.h \
-  /usr/include/c++/15.2.1/bits/alloc_traits.h \
-  /usr/include/c++/15.2.1/bits/allocated_ptr.h \
-  /usr/include/c++/15.2.1/bits/allocator.h \
-  /usr/include/c++/15.2.1/bits/atomic_base.h \
-  /usr/include/c++/15.2.1/bits/atomic_futex.h \
-  /usr/include/c++/15.2.1/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/15.2.1/bits/basic_ios.h \
-  /usr/include/c++/15.2.1/bits/basic_ios.tcc \
-  /usr/include/c++/15.2.1/bits/basic_string.h \
-  /usr/include/c++/15.2.1/bits/basic_string.tcc \
-  /usr/include/c++/15.2.1/bits/char_traits.h \
-  /usr/include/c++/15.2.1/bits/charconv.h \
-  /usr/include/c++/15.2.1/bits/chrono.h \
-  /usr/include/c++/15.2.1/bits/codecvt.h \
-  /usr/include/c++/15.2.1/bits/concept_check.h \
-  /usr/include/c++/15.2.1/bits/cpp_type_traits.h \
-  /usr/include/c++/15.2.1/bits/cxxabi_forced.h \
-  /usr/include/c++/15.2.1/bits/cxxabi_init_exception.h \
-  /usr/include/c++/15.2.1/bits/erase_if.h \
-  /usr/include/c++/15.2.1/bits/exception.h \
-  /usr/include/c++/15.2.1/bits/exception_defines.h \
-  /usr/include/c++/15.2.1/bits/exception_ptr.h \
-  /usr/include/c++/15.2.1/bits/fstream.tcc \
-  /usr/include/c++/15.2.1/bits/functexcept.h \
-  /usr/include/c++/15.2.1/bits/functional_hash.h \
-  /usr/include/c++/15.2.1/bits/hash_bytes.h \
-  /usr/include/c++/15.2.1/bits/invoke.h \
-  /usr/include/c++/15.2.1/bits/ios_base.h \
-  /usr/include/c++/15.2.1/bits/istream.tcc \
-  /usr/include/c++/15.2.1/bits/locale_classes.h \
-  /usr/include/c++/15.2.1/bits/locale_classes.tcc \
-  /usr/include/c++/15.2.1/bits/locale_conv.h \
-  /usr/include/c++/15.2.1/bits/locale_facets.h \
-  /usr/include/c++/15.2.1/bits/locale_facets.tcc \
-  /usr/include/c++/15.2.1/bits/locale_facets_nonio.h \
-  /usr/include/c++/15.2.1/bits/locale_facets_nonio.tcc \
-  /usr/include/c++/15.2.1/bits/localefwd.h \
-  /usr/include/c++/15.2.1/bits/memory_resource.h \
-  /usr/include/c++/15.2.1/bits/memoryfwd.h \
-  /usr/include/c++/15.2.1/bits/move.h \
-  /usr/include/c++/15.2.1/bits/nested_exception.h \
-  /usr/include/c++/15.2.1/bits/new_allocator.h \
-  /usr/include/c++/15.2.1/bits/node_handle.h \
-  /usr/include/c++/15.2.1/bits/ostream.h \
-  /usr/include/c++/15.2.1/bits/ostream.tcc \
-  /usr/include/c++/15.2.1/bits/ostream_insert.h \
-  /usr/include/c++/15.2.1/bits/parse_numbers.h \
-  /usr/include/c++/15.2.1/bits/postypes.h \
-  /usr/include/c++/15.2.1/bits/predefined_ops.h \
-  /usr/include/c++/15.2.1/bits/ptr_traits.h \
-  /usr/include/c++/15.2.1/bits/quoted_string.h \
-  /usr/include/c++/15.2.1/bits/range_access.h \
-  /usr/include/c++/15.2.1/bits/refwrap.h \
-  /usr/include/c++/15.2.1/bits/requires_hosted.h \
-  /usr/include/c++/15.2.1/bits/shared_ptr.h \
-  /usr/include/c++/15.2.1/bits/shared_ptr_atomic.h \
-  /usr/include/c++/15.2.1/bits/shared_ptr_base.h \
-  /usr/include/c++/15.2.1/bits/specfun.h \
-  /usr/include/c++/15.2.1/bits/sstream.tcc \
-  /usr/include/c++/15.2.1/bits/std_abs.h \
-  /usr/include/c++/15.2.1/bits/std_function.h \
-  /usr/include/c++/15.2.1/bits/std_mutex.h \
-  /usr/include/c++/15.2.1/bits/std_thread.h \
-  /usr/include/c++/15.2.1/bits/stl_algo.h \
-  /usr/include/c++/15.2.1/bits/stl_algobase.h \
-  /usr/include/c++/15.2.1/bits/stl_bvector.h \
-  /usr/include/c++/15.2.1/bits/stl_construct.h \
-  /usr/include/c++/15.2.1/bits/stl_function.h \
-  /usr/include/c++/15.2.1/bits/stl_heap.h \
-  /usr/include/c++/15.2.1/bits/stl_iterator.h \
-  /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h \
-  /usr/include/c++/15.2.1/bits/stl_map.h \
-  /usr/include/c++/15.2.1/bits/stl_multimap.h \
-  /usr/include/c++/15.2.1/bits/stl_pair.h \
-  /usr/include/c++/15.2.1/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/15.2.1/bits/stl_tempbuf.h \
-  /usr/include/c++/15.2.1/bits/stl_tree.h \
-  /usr/include/c++/15.2.1/bits/stl_uninitialized.h \
-  /usr/include/c++/15.2.1/bits/stl_vector.h \
-  /usr/include/c++/15.2.1/bits/streambuf.tcc \
-  /usr/include/c++/15.2.1/bits/streambuf_iterator.h \
-  /usr/include/c++/15.2.1/bits/string_view.tcc \
-  /usr/include/c++/15.2.1/bits/stringfwd.h \
-  /usr/include/c++/15.2.1/bits/this_thread_sleep.h \
-  /usr/include/c++/15.2.1/bits/uniform_int_dist.h \
-  /usr/include/c++/15.2.1/bits/unique_lock.h \
-  /usr/include/c++/15.2.1/bits/unique_ptr.h \
-  /usr/include/c++/15.2.1/bits/uses_allocator.h \
-  /usr/include/c++/15.2.1/bits/uses_allocator_args.h \
-  /usr/include/c++/15.2.1/bits/utility.h \
-  /usr/include/c++/15.2.1/bits/vector.tcc \
-  /usr/include/c++/15.2.1/bits/version.h \
-  /usr/include/c++/15.2.1/cctype \
-  /usr/include/c++/15.2.1/cerrno \
-  /usr/include/c++/15.2.1/chrono \
-  /usr/include/c++/15.2.1/climits \
-  /usr/include/c++/15.2.1/clocale \
-  /usr/include/c++/15.2.1/cmath \
-  /usr/include/c++/15.2.1/complex \
-  /usr/include/c++/15.2.1/concepts \
-  /usr/include/c++/15.2.1/condition_variable \
-  /usr/include/c++/15.2.1/cstddef \
-  /usr/include/c++/15.2.1/cstdint \
-  /usr/include/c++/15.2.1/cstdio \
-  /usr/include/c++/15.2.1/cstdlib \
-  /usr/include/c++/15.2.1/cstring \
-  /usr/include/c++/15.2.1/ctime \
-  /usr/include/c++/15.2.1/cwchar \
-  /usr/include/c++/15.2.1/cwctype \
-  /usr/include/c++/15.2.1/debug/assertions.h \
-  /usr/include/c++/15.2.1/debug/debug.h \
-  /usr/include/c++/15.2.1/exception \
-  /usr/include/c++/15.2.1/ext/aligned_buffer.h \
-  /usr/include/c++/15.2.1/ext/alloc_traits.h \
-  /usr/include/c++/15.2.1/ext/atomicity.h \
-  /usr/include/c++/15.2.1/ext/concurrence.h \
-  /usr/include/c++/15.2.1/ext/numeric_traits.h \
-  /usr/include/c++/15.2.1/ext/string_conversions.h \
-  /usr/include/c++/15.2.1/ext/type_traits.h \
-  /usr/include/c++/15.2.1/fstream \
-  /usr/include/c++/15.2.1/future \
-  /usr/include/c++/15.2.1/initializer_list \
-  /usr/include/c++/15.2.1/iomanip \
-  /usr/include/c++/15.2.1/ios \
-  /usr/include/c++/15.2.1/iosfwd \
-  /usr/include/c++/15.2.1/iostream \
-  /usr/include/c++/15.2.1/istream \
-  /usr/include/c++/15.2.1/limits \
-  /usr/include/c++/15.2.1/locale \
-  /usr/include/c++/15.2.1/map \
-  /usr/include/c++/15.2.1/memory \
-  /usr/include/c++/15.2.1/mutex \
-  /usr/include/c++/15.2.1/new \
-  /usr/include/c++/15.2.1/ostream \
-  /usr/include/c++/15.2.1/pstl/execution_defs.h \
-  /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/15.2.1/pstl/glue_memory_defs.h \
-  /usr/include/c++/15.2.1/pstl/pstl_config.h \
-  /usr/include/c++/15.2.1/ratio \
-  /usr/include/c++/15.2.1/sstream \
-  /usr/include/c++/15.2.1/stdexcept \
-  /usr/include/c++/15.2.1/streambuf \
-  /usr/include/c++/15.2.1/string \
-  /usr/include/c++/15.2.1/string_view \
-  /usr/include/c++/15.2.1/system_error \
-  /usr/include/c++/15.2.1/thread \
-  /usr/include/c++/15.2.1/tr1/bessel_function.tcc \
-  /usr/include/c++/15.2.1/tr1/beta_function.tcc \
-  /usr/include/c++/15.2.1/tr1/ell_integral.tcc \
-  /usr/include/c++/15.2.1/tr1/exp_integral.tcc \
-  /usr/include/c++/15.2.1/tr1/gamma.tcc \
-  /usr/include/c++/15.2.1/tr1/hypergeometric.tcc \
-  /usr/include/c++/15.2.1/tr1/legendre_function.tcc \
-  /usr/include/c++/15.2.1/tr1/modified_bessel_func.tcc \
-  /usr/include/c++/15.2.1/tr1/poly_hermite.tcc \
-  /usr/include/c++/15.2.1/tr1/poly_laguerre.tcc \
-  /usr/include/c++/15.2.1/tr1/riemann_zeta.tcc \
-  /usr/include/c++/15.2.1/tr1/special_function_util.h \
-  /usr/include/c++/15.2.1/tuple \
-  /usr/include/c++/15.2.1/type_traits \
-  /usr/include/c++/15.2.1/typeinfo \
-  /usr/include/c++/15.2.1/vector \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
@@ -5148,297 +2029,6 @@ CMakeFiles/geant_plate.dir/src/main.cc.o: /home/matei/SHiP/Software/Calo_G4_Stan
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
 
-geant_plate: /usr/lib/Scrt1.o \
-  /usr/lib/crti.o \
-  /usr/lib/crtn.o \
-  /usr/lib/libc.so \
-  /usr/lib/libgcc_s.so \
-  /usr/lib/libgcc_s.so.1 \
-  /usr/lib/libm.so \
-  /usr/lib/libpthread.a \
-  /usr/lib/libstdc++.so \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/libgcc.a \
-  /usr/lib/ld-linux-x86-64.so.2 \
-  /usr/lib/libCLHEP-2.4.7.1.so \
-  /usr/lib/libCoin.so.80 \
-  /usr/lib/libEGL.so.1 \
-  /usr/lib/libG4FR.so \
-  /usr/lib/libG4GMocren.so \
-  /usr/lib/libG4OpenGL.so \
-  /usr/lib/libG4OpenInventor.so \
-  /usr/lib/libG4RayTracer.so \
-  /usr/lib/libG4ToolsSG.so \
-  /usr/lib/libG4Tree.so \
-  /usr/lib/libG4VRML.so \
-  /usr/lib/libG4analysis.so \
-  /usr/lib/libG4digits_hits.so \
-  /usr/lib/libG4error_propagation.so \
-  /usr/lib/libG4event.so \
-  /usr/lib/libG4gdml.so \
-  /usr/lib/libG4geometry.so \
-  /usr/lib/libG4geomtext.so \
-  /usr/lib/libG4global.so \
-  /usr/lib/libG4graphics_reps.so \
-  /usr/lib/libG4intercoms.so \
-  /usr/lib/libG4interfaces.so \
-  /usr/lib/libG4materials.so \
-  /usr/lib/libG4mctruth.so \
-  /usr/lib/libG4modeling.so \
-  /usr/lib/libG4parmodels.so \
-  /usr/lib/libG4particles.so \
-  /usr/lib/libG4physicslists.so \
-  /usr/lib/libG4processes_core.so \
-  /usr/lib/libG4processes_hadronic.so \
-  /usr/lib/libG4ptl.so.3.0.0 \
-  /usr/lib/libG4readout.so \
-  /usr/lib/libG4run.so \
-  /usr/lib/libG4track.so \
-  /usr/lib/libG4tracking.so \
-  /usr/lib/libG4vis_management.so \
-  /usr/lib/libGL.so \
-  /usr/lib/libGLX.so.0 \
-  /usr/lib/libGLdispatch.so.0 \
-  /usr/lib/libICE.so \
-  /usr/lib/libOpenGL.so.0 \
-  /usr/lib/libQt6Core.so.6.10.1 \
-  /usr/lib/libQt6DBus.so.6 \
-  /usr/lib/libQt6Gui.so.6.10.1 \
-  /usr/lib/libQt6OpenGL.so.6 \
-  /usr/lib/libQt6OpenGLWidgets.so.6 \
-  /usr/lib/libQt6Widgets.so.6.10.1 \
-  /usr/lib/libSM.so \
-  /usr/lib/libSoQt.so.20 \
-  /usr/lib/libX11.so \
-  /usr/lib/libXau.so.6 \
-  /usr/lib/libXdmcp.so.6 \
-  /usr/lib/libXext.so \
-  /usr/lib/libXft.so.2 \
-  /usr/lib/libXm.so \
-  /usr/lib/libXmu.so \
-  /usr/lib/libXp.so.6 \
-  /usr/lib/libXrender.so.1 \
-  /usr/lib/libXt.so \
-  /usr/lib/libb2.so.1 \
-  /usr/lib/libbrotlicommon.so.1 \
-  /usr/lib/libbrotlidec.so.1 \
-  /usr/lib/libbz2.so.1.0 \
-  /usr/lib/libc.so.6 \
-  /usr/lib/libc_nonshared.a \
-  /usr/lib/libcom_err.so.2 \
-  /usr/lib/libcrypto.so.3 \
-  /usr/lib/libcurl.so.4 \
-  /usr/lib/libdbus-1.so.3 \
-  /usr/lib/libdouble-conversion.so.3 \
-  /usr/lib/libexpat.so \
-  /usr/lib/libfontconfig.so.1 \
-  /usr/lib/libfreetype.so.6 \
-  /usr/lib/libglib-2.0.so.0 \
-  /usr/lib/libgomp.so.1 \
-  /usr/lib/libgraphite2.so.3 \
-  /usr/lib/libgssapi_krb5.so.2 \
-  /usr/lib/libharfbuzz.so.0 \
-  /usr/lib/libicudata.so.78 \
-  /usr/lib/libicui18n.so.78 \
-  /usr/lib/libicuuc.so.78 \
-  /usr/lib/libidn2.so.0 \
-  /usr/lib/libjpeg.so.8 \
-  /usr/lib/libk5crypto.so.3 \
-  /usr/lib/libkeyutils.so.1 \
-  /usr/lib/libkrb5.so.3 \
-  /usr/lib/libkrb5support.so.0 \
-  /usr/lib/liblz4.so.1 \
-  /usr/lib/liblzma.so.5 \
-  /usr/lib/libm.so.6 \
-  /usr/lib/libmd4c.so.0 \
-  /usr/lib/libmvec.so.1 \
-  /usr/lib/libnghttp2.so.14 \
-  /usr/lib/libnghttp3.so.9 \
-  /usr/lib/libngtcp2.so.16 \
-  /usr/lib/libngtcp2_crypto_ossl.so.0 \
-  /usr/lib/libnsl.so.3 \
-  /usr/lib/libpcre2-16.so.0 \
-  /usr/lib/libpcre2-8.so.0 \
-  /usr/lib/libpng16.so.16 \
-  /usr/lib/libpsl.so.5 \
-  /usr/lib/libresolv.so.2 \
-  /usr/lib/libsqlite3.so.0 \
-  /usr/lib/libssh2.so.1 \
-  /usr/lib/libssl.so.3 \
-  /usr/lib/libsystemd.so.0 \
-  /usr/lib/libtbb.so.12 \
-  /usr/lib/libtirpc.so.3 \
-  /usr/lib/libunistring.so.5 \
-  /usr/lib/liburing.so.2 \
-  /usr/lib/libuuid.so.1 \
-  /usr/lib/libxcb.so.1 \
-  /usr/lib/libxerces-c.so \
-  /usr/lib/libxkbcommon.so.0 \
-  /usr/lib/libxxhash.so.0 \
-  /usr/lib/libz.so \
-  /usr/lib/libzstd.so.1 \
-  /usr/lib/root/libCore.so \
-  /usr/lib/root/libGpad.so \
-  /usr/lib/root/libGraf.so \
-  /usr/lib/root/libGraf3d.so \
-  /usr/lib/root/libHist.so \
-  /usr/lib/root/libImt.so \
-  /usr/lib/root/libMathCore.so \
-  /usr/lib/root/libMatrix.so \
-  /usr/lib/root/libMultiProc.so \
-  /usr/lib/root/libNet.so \
-  /usr/lib/root/libPhysics.so \
-  /usr/lib/root/libPostscript.so \
-  /usr/lib/root/libRIO.so \
-  /usr/lib/root/libROOTDataFrame.so \
-  /usr/lib/root/libROOTNTuple.so \
-  /usr/lib/root/libROOTVecOps.so \
-  /usr/lib/root/libRint.so \
-  /usr/lib/root/libThread.so \
-  /usr/lib/root/libTree.so \
-  /usr/lib/root/libTreePlayer.so \
-  CMakeFiles/geant_plate.dir/src/ActionInitialization.cc.o \
-  CMakeFiles/geant_plate.dir/src/DetectorConstruction.cc.o \
-  CMakeFiles/geant_plate.dir/src/DetectorMessenger.cc.o \
-  CMakeFiles/geant_plate.dir/src/EventAction.cc.o \
-  CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o \
-  CMakeFiles/geant_plate.dir/src/PrimaryGeneratorMessenger.cc.o \
-  CMakeFiles/geant_plate.dir/src/RootIO.cc.o \
-  CMakeFiles/geant_plate.dir/src/RunAction.cc.o \
-  CMakeFiles/geant_plate.dir/src/SteppingAction.cc.o \
-  CMakeFiles/geant_plate.dir/src/Thin_layers.cc.o \
-  CMakeFiles/geant_plate.dir/src/Wide_layers.cc.o \
-  CMakeFiles/geant_plate.dir/src/main.cc.o
-
-
-CMakeFiles/geant_plate.dir/src/main.cc.o:
-
-CMakeFiles/geant_plate.dir/src/Wide_layers.cc.o:
-
-CMakeFiles/geant_plate.dir/src/Thin_layers.cc.o:
-
-CMakeFiles/geant_plate.dir/src/PrimaryGeneratorMessenger.cc.o:
-
-CMakeFiles/geant_plate.dir/src/EventAction.cc.o:
-
-/usr/lib/root/libTree.so:
-
-/usr/lib/root/libROOTNTuple.so:
-
-/usr/lib/root/libPhysics.so:
-
-/usr/lib/root/libMultiProc.so:
-
-/usr/lib/root/libGraf.so:
-
-/usr/lib/root/libCore.so:
-
-/usr/lib/libxcb.so.1:
-
-/usr/lib/liburing.so.2:
-
-/usr/lib/libtirpc.so.3:
-
-/usr/lib/libsqlite3.so.0:
-
-/usr/lib/libpng16.so.16:
-
-/usr/lib/libngtcp2_crypto_ossl.so.0:
-
-/usr/lib/libnghttp2.so.14:
-
-/usr/lib/libm.so.6:
-
-/usr/lib/liblzma.so.5:
-
-/usr/lib/libkrb5.so.3:
-
-/usr/lib/libjpeg.so.8:
-
-/usr/lib/libicudata.so.78:
-
-/usr/lib/libharfbuzz.so.0:
-
-/usr/lib/libgssapi_krb5.so.2:
-
-/usr/lib/libglib-2.0.so.0:
-
-/usr/lib/libcurl.so.4:
-
-/usr/lib/libcrypto.so.3:
-
-/usr/lib/libc_nonshared.a:
-
-/usr/lib/libbz2.so.1.0:
-
-/usr/lib/libXmu.so:
-
-/usr/lib/libXext.so:
-
-CMakeFiles/geant_plate.dir/src/RootIO.cc.o:
-
-/usr/lib/libXdmcp.so.6:
-
-/usr/lib/libXau.so.6:
-
-/usr/lib/libX11.so:
-
-/usr/lib/libQt6Widgets.so.6.10.1:
-
-/usr/lib/libQt6Gui.so.6.10.1:
-
-/usr/lib/libGL.so:
-
-/usr/lib/libG4track.so:
-
-/usr/lib/libG4run.so:
-
-CMakeFiles/geant_plate.dir/src/ActionInitialization.cc.o:
-
-/usr/lib/libG4physicslists.so:
-
-/usr/lib/libG4particles.so:
-
-/usr/lib/libG4geometry.so:
-
-/usr/lib/libG4event.so:
-
-/usr/lib/libG4error_propagation.so:
-
-/usr/lib/libG4digits_hits.so:
-
-/usr/lib/libG4OpenGL.so:
-
-/usr/lib/libG4OpenInventor.so:
-
-/usr/lib/libCLHEP-2.4.7.1.so:
-
-/usr/lib/ld-linux-x86-64.so.2:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o:
-
-CMakeFiles/geant_plate.dir/src/SteppingAction.cc.o:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o:
-
-/usr/lib/libmd4c.so.0:
-
-/usr/lib/libstdc++.so:
-
-/usr/lib/libpthread.a:
-
-/usr/lib/libm.so:
-
-/usr/lib/libcom_err.so.2:
-
-/usr/lib/libgcc_s.so.1:
-
-/usr/lib/libgcc_s.so:
-
-/usr/lib/crti.o:
-
-/usr/lib/Scrt1.o:
 
 /usr/include/c++/15.2.1/regex:
 
@@ -5462,8 +2052,6 @@ CMakeFiles/geant_plate.dir/src/SteppingAction.cc.o:
 
 /usr/include/Geant4/rundefs.hh:
 
-/usr/lib/libG4vis_management.so:
-
 /usr/include/Geant4/icomsdefs.hh:
 
 /usr/include/Geant4/graphics_reps_defs.hh:
@@ -5480,11 +2068,7 @@ CMakeFiles/geant_plate.dir/src/SteppingAction.cc.o:
 
 /usr/include/Geant4/PTL/ScopeDestructor.hh:
 
-/usr/lib/libuuid.so.1:
-
 /usr/include/Geant4/PTL/Macros.hh:
-
-/usr/lib/libicui18n.so.78:
 
 /usr/include/Geant4/PTL/JoinFunction.hh:
 
@@ -5492,15 +2076,9 @@ CMakeFiles/geant_plate.dir/src/SteppingAction.cc.o:
 
 /usr/include/Geant4/PTL/AutoLock.hh:
 
-/usr/lib/libngtcp2.so.16:
-
-/usr/lib/libG4geomtext.so:
-
 /usr/include/Geant4/G4Voxelizer.icc:
 
 /usr/include/Geant4/G4Voxelizer.hh:
-
-/usr/lib/libG4global.so:
 
 /usr/include/Geant4/G4VoxelNavigation.icc:
 
@@ -5509,8 +2087,6 @@ CMakeFiles/geant_plate.dir/src/SteppingAction.cc.o:
 /usr/include/Geant4/G4VisManager.icc:
 
 /usr/include/Geant4/G4VisExtent.hh:
-
-/usr/lib/libG4gdml.so:
 
 /usr/include/Geant4/G4VisExecutive.icc:
 
@@ -5525,6 +2101,10 @@ CMakeFiles/geant_plate.dir/src/SteppingAction.cc.o:
 /usr/include/Geant4/G4VUserTaskQueue.hh:
 
 /usr/include/Geant4/G4VTree.hh:
+
+/usr/include/Geant4/G4VTouchable.hh:
+
+/usr/include/Geant4/G4VSteppingVerbose.hh:
 
 /usr/include/Geant4/G4VSceneHandler.icc:
 
@@ -5568,8 +2148,6 @@ CMakeFiles/geant_plate.dir/src/SteppingAction.cc.o:
 
 /usr/include/Geant4/G4Tubs.icc:
 
-/usr/lib/libbrotlicommon.so.1:
-
 /usr/include/Geant4/G4Tubs.hh:
 
 /usr/include/Geant4/G4Trd.icc:
@@ -5584,13 +2162,21 @@ CMakeFiles/geant_plate.dir/src/SteppingAction.cc.o:
 
 /usr/include/Geant4/G4TrackingManager.hh:
 
+/usr/include/Geant4/G4TrackVector.hh:
+
+/usr/include/Geant4/G4TrackStatus.hh:
+
+/usr/include/Geant4/G4Track.icc:
+
+/usr/include/Geant4/G4TouchableHistory.icc:
+
+/usr/include/Geant4/G4TouchableHistory.hh:
+
+/usr/include/Geant4/G4TouchableHandle.hh:
+
 /usr/include/Geant4/G4Torus.hh:
 
 /usr/include/Geant4/G4ToolsSGXtZB.hh:
-
-/usr/lib/libtbb.so.12:
-
-/usr/lib/libG4parmodels.so:
 
 /usr/include/Geant4/G4ToolsSGXtGLES.hh:
 
@@ -5602,15 +2188,15 @@ CMakeFiles/geant_plate.dir/src/SteppingAction.cc.o:
 
 /usr/include/Geant4/G4SubEventTrackStack.hh:
 
-/usr/lib/libgraphite2.so.3:
-
 /usr/include/c++/15.2.1/bits/regex_constants.h:
 
 /usr/include/Geant4/G4SubEvent.hh:
 
-/usr/include/Geant4/G4Sphere.hh:
+/usr/include/Geant4/G4StepPoint.icc:
 
-/usr/lib/libidn2.so.0:
+/usr/include/Geant4/G4Step.hh:
+
+/usr/include/Geant4/G4Sphere.hh:
 
 /usr/include/Geant4/G4SmartVoxelProxy.icc:
 
@@ -5620,15 +2206,11 @@ CMakeFiles/geant_plate.dir/src/SteppingAction.cc.o:
 
 /usr/include/Geant4/G4SmartTrackStack.hh:
 
-/usr/lib/libxxhash.so.0:
-
 /usr/include/Geant4/G4SceneTreeItem.hh:
 
 /usr/include/Geant4/G4SceneList.hh:
 
 /usr/include/Geant4/G4RunManagerKernel.hh:
-
-/usr/lib/root/libROOTDataFrame.so:
 
 /usr/include/Geant4/G4RunManager.hh:
 
@@ -5652,8 +2234,6 @@ CMakeFiles/geant_plate.dir/src/SteppingAction.cc.o:
 
 /usr/include/Geant4/G4PolyhedraHistorical.hh:
 
-/usr/lib/libQt6OpenGL.so.6:
-
 /usr/include/Geant4/G4Polyhedra.hh:
 
 /usr/include/Geant4/G4PolyconeHistorical.hh:
@@ -5668,13 +2248,13 @@ CMakeFiles/geant_plate.dir/src/SteppingAction.cc.o:
 
 /usr/include/Geant4/G4PhysicsTable.hh:
 
+/usr/include/Geant4/G4PhysicsModelCatalog.hh:
+
 /usr/include/Geant4/G4ParticleChange.icc:
 
 /usr/include/Geant4/G4ParameterisedNavigation.hh:
 
 /usr/include/Geant4/G4Para.hh:
-
-/usr/lib/libXt.so:
 
 /usr/include/Geant4/G4Orb.icc:
 
@@ -5692,8 +2272,6 @@ CMakeFiles/geant_plate.dir/src/SteppingAction.cc.o:
 
 /usr/include/Geant4/G4OpenGLQt.hh:
 
-/usr/lib/root/libRIO.so:
-
 /usr/include/Geant4/G4VDigi.hh:
 
 /usr/include/Geant4/G4OpenGLImmediateXm.hh:
@@ -5708,13 +2286,23 @@ CMakeFiles/geant_plate.dir/src/SteppingAction.cc.o:
 
 /usr/include/Geant4/G4NormalNavigation.hh:
 
-/usr/lib/root/libPostscript.so:
-
 /usr/include/Geant4/G4Navigator.hh:
+
+/usr/include/Geant4/G4NavigationLevelRep.hh:
+
+/usr/include/Geant4/G4NavigationLevel.icc:
+
+/usr/include/Geant4/G4OpenGLStoredX.hh:
+
+/usr/include/Geant4/G4NavigationLevel.hh:
+
+/usr/include/Geant4/G4NavigationHistoryPool.hh:
 
 /usr/include/Geant4/G4ModelingParameters.icc:
 
 /usr/include/Geant4/G4MaterialCutsCouple.hh:
+
+/usr/include/Geant4/G4LorentzVector.hh:
 
 /usr/include/Geant4/G4VUIshell.hh:
 
@@ -5728,6 +2316,12 @@ CMakeFiles/geant_plate.dir/src/SteppingAction.cc.o:
 
 /usr/include/Geant4/G4Ellipsoid.hh:
 
+/usr/include/Geant4/G4TaskGroup.hh:
+
+/usr/include/Geant4/G4ElectronOccupancy.hh:
+
+/usr/include/Geant4/G4DynamicParticle.icc:
+
 /usr/include/Geant4/G4DigiFilterFactories.hh:
 
 /usr/include/c++/15.2.1/bits/stl_list.h:
@@ -5740,8 +2334,6 @@ CMakeFiles/geant_plate.dir/src/SteppingAction.cc.o:
 
 /usr/include/Geant4/G4Color.hh:
 
-/usr/lib/libpsl.so.5:
-
 /usr/include/Geant4/G4ClassificationOfNewTrack.hh:
 
 /usr/include/c++/15.2.1/bits/regex.h:
@@ -5752,7 +2344,11 @@ CMakeFiles/geant_plate.dir/src/SteppingAction.cc.o:
 
 /usr/include/Geant4/G4AuxiliaryNavServices.icc:
 
+/usr/include/Geant4/G4AttValue.hh:
+
 /usr/include/Geant4/G4AttDef.hh:
+
+/usr/include/Geant4/G4AffineTransform.hh:
 
 /usr/include/Geant4/G4ASCIITree.hh:
 
@@ -5761,6 +2357,10 @@ CMakeFiles/geant_plate.dir/src/SteppingAction.cc.o:
 /usr/include/Geant4/FTFP_BERT.hh:
 
 /usr/include/CLHEP/Utility/defs.h:
+
+/usr/include/Geant4/G4NavigationHistory.icc:
+
+/usr/include/CLHEP/Random/defs.h:
 
 /usr/include/CLHEP/Random/RanluxppEngine.h:
 
@@ -5802,8 +2402,6 @@ CMakeFiles/geant_plate.dir/src/SteppingAction.cc.o:
 
 /usr/include/CLHEP/Random/RandGaussT.icc:
 
-/usr/lib/libG4analysis.so:
-
 /usr/include/CLHEP/Random/RandomEngine.h:
 
 /usr/include/CLHEP/Random/RandGauss.h:
@@ -5822,8 +2420,6 @@ CMakeFiles/geant_plate.dir/src/SteppingAction.cc.o:
 
 /usr/include/CLHEP/Random/RandBreitWigner.h:
 
-/usr/lib/libSoQt.so.20:
-
 /usr/include/CLHEP/Random/RandBit.icc:
 
 /usr/include/Geant4/G4VVolumeMaterialScanner.hh:
@@ -5838,89 +2434,7 @@ CMakeFiles/geant_plate.dir/src/SteppingAction.cc.o:
 
 /usr/include/CLHEP/Random/DualRand.h:
 
-/home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/Wide_layers.cc:
-
-/usr/include/Geant4/G4VTouchable.hh:
-
-/usr/include/Geant4/G4TrackVector.hh:
-
-/usr/include/Geant4/G4TrackStatus.hh:
-
-/usr/include/Geant4/G4Track.icc:
-
-/usr/include/Geant4/G4TouchableHistory.icc:
-
-/usr/include/Geant4/G4TouchableHistory.hh:
-
-/usr/include/Geant4/G4TouchableHandle.hh:
-
-/usr/include/Geant4/G4StepPoint.icc:
-
-/usr/lib/libdouble-conversion.so.3:
-
-/usr/include/Geant4/G4Step.hh:
-
-/usr/include/Geant4/G4PhysicsModelCatalog.hh:
-
-/usr/include/Geant4/G4NavigationLevelRep.hh:
-
-/usr/include/Geant4/G4NavigationLevel.icc:
-
-/usr/include/Geant4/G4OpenGLStoredX.hh:
-
-/usr/include/Geant4/G4NavigationLevel.hh:
-
-/usr/include/Geant4/G4NavigationHistoryPool.hh:
-
-/usr/include/CLHEP/Random/defs.h:
-
-/usr/include/Geant4/G4NavigationHistory.icc:
-
-/usr/include/Geant4/G4LorentzVector.hh:
-
-/usr/include/Geant4/G4TaskGroup.hh:
-
-/usr/include/Geant4/G4ElectronOccupancy.hh:
-
-/usr/include/Geant4/G4DynamicParticle.icc:
-
-/usr/include/Geant4/G4AffineTransform.hh:
-
-/home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/SteppingAction.cc:
-
-/home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/RunAction.cc:
-
-/home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/RootIO.cc:
-
-/usr/lib/libbrotlidec.so.1:
-
-/usr/include/Geant4/G4UIcmdWith3VectorAndUnit.hh:
-
-/usr/include/Geant4/G4UIcmdWith3Vector.hh:
-
-/home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/PrimaryGeneratorMessenger.cc:
-
 /usr/include/c++/15.2.1/stdlib.h:
-
-/usr/lib/libsystemd.so.0:
-
-/usr/include/Geant4/G4ParticleChange.hh:
-
-/usr/include/Geant4/G4ParticleTable.icc:
-
-/usr/include/Geant4/G4ParticleTable.hh:
-
-/usr/include/Geant4/G4ParticleMomentum.hh:
-
-/usr/include/Geant4/G4ParticleGun.hh:
-
-/usr/include/CLHEP/Random/RandSkewNormal.icc:
-
-/usr/include/Geant4/G4ParticleDefinition.hh:
-
-/usr/include/Geant4/G4PDefManager.hh:
-
-/home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/PrimaryGeneratorMessenger.hh:
 
 /usr/include/Geant4/G4VisAttributes.icc:
 
@@ -5933,6 +2447,14 @@ CMakeFiles/geant_plate.dir/src/SteppingAction.cc.o:
 /usr/include/Geant4/G4MCCIndexConversionTable.hh:
 
 /usr/include/c++/15.2.1/bits/stl_set.h:
+
+/usr/include/Geant4/Randomize.hh:
+
+/usr/include/c++/15.2.1/bits/stl_multiset.h:
+
+/usr/include/Geant4/pwdefs.hh:
+
+/usr/include/Geant4/G4VTrajectory.hh:
 
 /usr/include/Geant4/G4Navigator.icc:
 
@@ -5950,8 +2472,6 @@ CMakeFiles/geant_plate.dir/src/SteppingAction.cc.o:
 
 /usr/include/c++/15.2.1/bits/range_access.h:
 
-CMakeFiles/geant_plate.dir/src/RunAction.cc.o:
-
 /usr/include/CLHEP/Vector/RotationX.h:
 
 /usr/include/c++/15.2.1/bits/move.h:
@@ -5964,11 +2484,7 @@ CMakeFiles/geant_plate.dir/src/RunAction.cc.o:
 
 /usr/include/c++/15.2.1/bits/locale_classes.h:
 
-/usr/lib/libresolv.so.2:
-
 /usr/include/alloca.h:
-
-/usr/lib/libG4FR.so:
 
 /usr/include/c++/15.2.1/bits/ios_base.h:
 
@@ -5998,11 +2514,9 @@ CMakeFiles/geant_plate.dir/src/RunAction.cc.o:
 
 /usr/include/Geant4/G4OrderedTable.hh:
 
-/usr/lib/libXrender.so.1:
+/usr/include/Geant4/G4SteppingControl.hh:
 
 /usr/include/Geant4/G4MTRunManager.hh:
-
-/usr/include/Geant4/G4SteppingControl.hh:
 
 /usr/include/c++/15.2.1/bits/basic_string.tcc:
 
@@ -6029,8 +2543,6 @@ CMakeFiles/geant_plate.dir/src/RunAction.cc.o:
 /usr/include/c++/15.2.1/array:
 
 /usr/include/CLHEP/Vector/TwoVector.icc:
-
-/usr/lib/libGLdispatch.so.0:
 
 /usr/include/c++/15.2.1/backward/binders.h:
 
@@ -6078,8 +2590,6 @@ CMakeFiles/geant_plate.dir/src/RunAction.cc.o:
 
 /usr/include/c++/15.2.1/bits/stl_algo.h:
 
-/usr/lib/libG4materials.so:
-
 /usr/include/c++/15.2.1/bits/stl_uninitialized.h:
 
 /usr/include/pthread.h:
@@ -6124,10 +2634,6 @@ CMakeFiles/geant_plate.dir/src/RunAction.cc.o:
 
 /usr/include/Geant4/G4VUserActionInitialization.hh:
 
-/usr/lib/libz.so:
-
-/usr/lib/libdbus-1.so.3:
-
 /usr/include/c++/15.2.1/iosfwd:
 
 /usr/include/bits/types/cookie_io_functions_t.h:
@@ -6140,11 +2646,7 @@ CMakeFiles/geant_plate.dir/src/RunAction.cc.o:
 
 /usr/include/TIsAProxy.h:
 
-/home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/DetectorMessenger.cc:
-
 /usr/include/bits/types/__sigset_t.h:
-
-/usr/lib/libG4ToolsSG.so:
 
 /usr/include/c++/15.2.1/bits/ostream.tcc:
 
@@ -6158,11 +2660,7 @@ CMakeFiles/geant_plate.dir/src/RunAction.cc.o:
 
 /usr/include/bits/wchar.h:
 
-/usr/lib/root/libHist.so:
-
 /usr/include/bits/types/struct___jmp_buf_tag.h:
-
-/usr/lib/libxkbcommon.so.0:
 
 /usr/include/bits/timesize.h:
 
@@ -6178,8 +2676,6 @@ CMakeFiles/geant_plate.dir/src/RunAction.cc.o:
 
 /usr/include/Geant4/G4ExceptionSeverity.hh:
 
-/usr/lib/libfontconfig.so.1:
-
 /usr/include/CLHEP/Random/RandExponential.icc:
 
 /usr/include/bits/string_fortified.h:
@@ -6187,8 +2683,6 @@ CMakeFiles/geant_plate.dir/src/RunAction.cc.o:
 /usr/include/CLHEP/Vector/RotationY.icc:
 
 /usr/include/bits/stdlib.h:
-
-/usr/lib/libXp.so.6:
 
 /usr/include/asm-generic/int-ll64.h:
 
@@ -6208,8 +2702,6 @@ CMakeFiles/geant_plate.dir/src/RunAction.cc.o:
 
 /usr/include/c++/15.2.1/tr1/poly_hermite.tcc:
 
-/usr/lib/root/libThread.so:
-
 /usr/include/CLHEP/Vector/TwoVector.h:
 
 /usr/include/bits/setjmp.h:
@@ -6223,8 +2715,6 @@ CMakeFiles/geant_plate.dir/src/RunAction.cc.o:
 /usr/include/Geant4/G4StackedTrack.hh:
 
 /usr/include/TBranchCacheInfo.h:
-
-CMakeFiles/geant_plate.dir/src/DetectorMessenger.cc.o:
 
 /usr/include/Geant4/G4NistMaterialBuilder.hh:
 
@@ -6270,10 +2760,6 @@ CMakeFiles/geant_plate.dir/src/DetectorMessenger.cc.o:
 
 /usr/include/bits/types/__FILE.h:
 
-/usr/lib/libG4processes_hadronic.so:
-
-/usr/lib/libG4RayTracer.so:
-
 /usr/include/Geant4/G4HitFilterFactories.hh:
 
 /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/RootIO.hh:
@@ -6289,8 +2775,6 @@ CMakeFiles/geant_plate.dir/src/DetectorMessenger.cc.o:
 /usr/include/c++/15.2.1/bits/locale_facets_nonio.tcc:
 
 /usr/include/bits/select.h:
-
-/usr/lib/libG4readout.so:
 
 /usr/include/TBuffer.h:
 
@@ -6310,31 +2794,21 @@ CMakeFiles/geant_plate.dir/src/DetectorMessenger.cc.o:
 
 /usr/include/c++/15.2.1/functional:
 
-/usr/lib/libc.so.6:
-
 /usr/include/Geant4/G4Track.hh:
 
 /usr/include/bits/fp-fast.h:
-
-/usr/lib/libQt6DBus.so.6:
 
 /usr/include/Geant4/G4UserEventAction.hh:
 
 /usr/include/sched.h:
 
-/usr/lib/libk5crypto.so.3:
-
 /usr/include/wctype.h:
 
 /usr/include/Geant4/G4ICRU90StoppingData.hh:
 
-/usr/lib/libQt6Core.so.6.10.1:
-
 /usr/include/Geant4/G4StepStatus.hh:
 
 /usr/include/Geant4/G4IonisParamMat.hh:
-
-/usr/lib/root/libGpad.so:
 
 /usr/include/Geant4/tls.hh:
 
@@ -6343,8 +2817,6 @@ CMakeFiles/geant_plate.dir/src/DetectorMessenger.cc.o:
 /usr/include/Geant4/G4DynamicParticle.hh:
 
 /usr/include/c++/15.2.1/bits/std_function.h:
-
-/usr/lib/libOpenGL.so.0:
 
 /usr/include/Geant4/G4AuxiliaryNavServices.hh:
 
@@ -6358,25 +2830,15 @@ CMakeFiles/geant_plate.dir/src/DetectorMessenger.cc.o:
 
 /usr/include/TIterator.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/libgcc.a:
-
 /usr/include/c++/15.2.1/debug/assertions.h:
 
 /usr/include/c++/15.2.1/string:
 
 /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/RunAction.hh:
 
-/usr/include/c++/15.2.1/memory:
-
-/usr/lib/libunistring.so.5:
-
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
 
 /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/ActionInitialization.cc:
-
-/usr/include/Geant4/Randomize.hh:
-
-/usr/include/c++/15.2.1/bits/stl_multiset.h:
 
 /usr/include/Geant4/G4SurfBits.hh:
 
@@ -6400,13 +2862,11 @@ CMakeFiles/geant_plate.dir/src/DetectorMessenger.cc.o:
 
 /usr/include/Geant4/G4ThreeVector.hh:
 
-/usr/lib/libG4processes_core.so:
-
 /usr/include/bits/time64.h:
 
-/usr/include/Geant4/G4TBBTaskGroup.hh:
-
 /usr/include/Geant4/trkdefs.hh:
+
+/usr/include/Geant4/G4TBBTaskGroup.hh:
 
 /usr/include/asm/posix_types.h:
 
@@ -6422,8 +2882,6 @@ CMakeFiles/geant_plate.dir/src/DetectorMessenger.cc.o:
 
 /usr/include/TGenericClassInfo.h:
 
-/usr/lib/root/libGraf3d.so:
-
 /usr/include/c++/15.2.1/bits/stl_heap.h:
 
 /usr/include/c++/15.2.1/exception:
@@ -6431,8 +2889,6 @@ CMakeFiles/geant_plate.dir/src/DetectorMessenger.cc.o:
 /usr/include/TAttMarker.h:
 
 /usr/include/c++/15.2.1/bits/memory_resource.h:
-
-/usr/lib/libfreetype.so.6:
 
 /usr/include/CLHEP/Vector/RotationZ.icc:
 
@@ -6447,8 +2903,6 @@ CMakeFiles/geant_plate.dir/src/DetectorMessenger.cc.o:
 /usr/include/Geant4/G4MTBarrier.hh:
 
 /usr/include/bits/stdio_lim.h:
-
-/usr/lib/libCoin.so.80:
 
 /usr/include/Geant4/G4VUserPrimaryGeneratorAction.hh:
 
@@ -6472,6 +2926,8 @@ CMakeFiles/geant_plate.dir/src/DetectorMessenger.cc.o:
 
 /usr/include/c++/15.2.1/clocale:
 
+/usr/include/Geant4/G4ParticleTable.hh:
+
 /usr/include/Geant4/G4Log.hh:
 
 /usr/include/ESTLType.h:
@@ -6482,19 +2938,11 @@ CMakeFiles/geant_plate.dir/src/DetectorMessenger.cc.o:
 
 /usr/include/TObject.h:
 
-/usr/lib/libssh2.so.1:
-
 /usr/include/Geant4/G4TessellatedSolid.hh:
 
 /usr/include/Geant4/G4Pow.hh:
 
-/usr/lib/libxerces-c.so:
-
 /usr/include/Byteswap.h:
-
-/usr/lib/libb2.so.1:
-
-/usr/lib/libG4modeling.so:
 
 /usr/include/Geant4/HepPolyhedron.h:
 
@@ -6506,13 +2954,9 @@ CMakeFiles/geant_plate.dir/src/DetectorMessenger.cc.o:
 
 /usr/include/DllImport.h:
 
-/usr/lib/libc.so:
-
 /usr/include/asm-generic/types.h:
 
 /usr/include/c++/15.2.1/bits/basic_string.h:
-
-/usr/lib/root/libMatrix.so:
 
 /usr/include/bits/stdio2.h:
 
@@ -6526,19 +2970,13 @@ CMakeFiles/geant_plate.dir/src/DetectorMessenger.cc.o:
 
 /usr/include/CLHEP/Vector/ThreeVector.h:
 
-/usr/lib/libICE.so:
-
 /usr/include/TClass.h:
 
 /usr/include/c++/15.2.1/bits/ostream.h:
 
 /usr/include/Geant4/templates.hh:
 
-/usr/lib/libkeyutils.so.1:
-
 /usr/include/c++/15.2.1/bits/ostream_insert.h:
-
-/usr/lib/libXft.so.2:
 
 /usr/include/bits/stdlib-float.h:
 
@@ -6547,6 +2985,10 @@ CMakeFiles/geant_plate.dir/src/DetectorMessenger.cc.o:
 /usr/include/bits/atomic_wide_counter.h:
 
 /usr/include/c++/15.2.1/bits/enable_special_members.h:
+
+/usr/include/Geant4/G4VHitsCollection.hh:
+
+/usr/include/CLHEP/Vector/defs.h:
 
 /usr/include/Geant4/G4LogicalVolume.icc:
 
@@ -6560,11 +3002,7 @@ CMakeFiles/geant_plate.dir/src/DetectorMessenger.cc.o:
 
 /usr/include/bits/mathcalls-helper-functions.h:
 
-/usr/lib/libgomp.so.1:
-
 /usr/include/c++/15.2.1/atomic:
-
-CMakeFiles/geant_plate.dir/src/DetectorConstruction.cc.o:
 
 /usr/include/c++/15.2.1/bits/quoted_string.h:
 
@@ -6616,11 +3054,9 @@ CMakeFiles/geant_plate.dir/src/DetectorConstruction.cc.o:
 
 /usr/include/Geant4/geomdefs.hh:
 
-/usr/include/Geant4/pwdefs.hh:
+/usr/include/Geant4/G4VDigiCollection.hh:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
-
-/usr/include/Geant4/G4VDigiCollection.hh:
 
 /usr/include/Geant4/G4UserRunAction.hh:
 
@@ -6636,8 +3072,6 @@ CMakeFiles/geant_plate.dir/src/DetectorConstruction.cc.o:
 
 /usr/include/TDatime.h:
 
-/usr/lib/libG4interfaces.so:
-
 /usr/include/CLHEP/Vector/RotationZ.h:
 
 /usr/include/bits/posix2_lim.h:
@@ -6645,8 +3079,6 @@ CMakeFiles/geant_plate.dir/src/DetectorConstruction.cc.o:
 /usr/include/Geant4/G4ProductionCuts.hh:
 
 /usr/include/c++/15.2.1/bits/stl_algobase.h:
-
-/usr/lib/libG4intercoms.so:
 
 /usr/include/Geant4/G4VUPLSplitter.hh:
 
@@ -6664,23 +3096,13 @@ CMakeFiles/geant_plate.dir/src/DetectorConstruction.cc.o:
 
 /usr/include/c++/15.2.1/system_error:
 
-/usr/lib/liblz4.so.1:
-
 /usr/include/c++/15.2.1/bits/invoke.h:
 
 /usr/include/math.h:
 
-CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
-
-/usr/lib/libG4Tree.so:
-
 /usr/include/c++/15.2.1/ext/atomicity.h:
 
 /usr/include/c++/15.2.1/bits/allocator.h:
-
-/usr/lib/libkrb5support.so.0:
-
-/usr/lib/libEGL.so.1:
 
 /usr/include/bits/posix1_lim.h:
 
@@ -6694,21 +3116,13 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 
 /usr/include/TUrl.h:
 
-/usr/lib/libpcre2-8.so.0:
-
 /usr/include/Geant4/G4UIcommandStatus.hh:
 
 /usr/include/TVersionCheck.h:
 
-/usr/include/Geant4/G4AttValue.hh:
-
-/home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/EventAction.cc:
-
 /usr/include/c++/15.2.1/bits/locale_facets.h:
 
 /usr/include/TVirtualRWMutex.h:
-
-/usr/lib/libG4mctruth.so:
 
 /usr/include/asm-generic/posix_types.h:
 
@@ -6730,9 +3144,9 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 
 /usr/include/bits/byteswap.h:
 
-/usr/include/bits/endianness.h:
+/usr/include/Geant4/G4ParticleGun.hh:
 
-/usr/lib/root/libRint.so:
+/usr/include/bits/endianness.h:
 
 /usr/include/Geant4/G4Material.hh:
 
@@ -6752,6 +3166,8 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h:
 
+/home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/PrimaryGeneratorMessenger.hh:
+
 /usr/include/CLHEP/Random/RandChiSquare.icc:
 
 /usr/include/ROOT/TIOFeatures.hxx:
@@ -6761,8 +3177,6 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 /usr/include/Geant4/G4PhysicsVector.icc:
 
 /usr/include/bits/types/FILE.h:
-
-/usr/lib/libQt6OpenGLWidgets.so.6:
 
 /usr/include/Geant4/G4ProcessType.hh:
 
@@ -6779,8 +3193,6 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 /usr/include/TList.h:
 
 /usr/include/limits.h:
-
-/usr/lib/root/libROOTVecOps.so:
 
 /usr/include/bits/libc-header-start.h:
 
@@ -6808,8 +3220,6 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 
 /usr/include/TNamed.h:
 
-/usr/lib/libGLX.so.0:
-
 /usr/include/Geant4/G4PhysicsTable.icc:
 
 /usr/include/c++/15.2.1/bits/exception_ptr.h:
@@ -6823,8 +3233,6 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 /usr/include/bits/types/__fpos_t.h:
 
 /usr/include/c++/15.2.1/tr1/riemann_zeta.tcc:
-
-/usr/lib/libG4graphics_reps.so:
 
 /usr/include/TVirtualTreePlayer.h:
 
@@ -6892,17 +3300,9 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 
 /usr/include/c++/15.2.1/bits/stl_pair.h:
 
-/usr/lib/libG4GMocren.so:
-
 /usr/include/c++/15.2.1/bits/stl_raw_storage_iter.h:
 
 /usr/include/c++/15.2.1/bits/stl_relops.h:
-
-/home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/PrimaryGeneratorAction.cc:
-
-/usr/include/bits/types/struct_timespec.h:
-
-/usr/include/c++/15.2.1/tr1/hypergeometric.tcc:
 
 /usr/include/c++/15.2.1/bits/stl_tempbuf.h:
 
@@ -6930,8 +3330,6 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 
 /usr/include/c++/15.2.1/bits/streambuf_iterator.h:
 
-/usr/lib/libG4tracking.so:
-
 /usr/include/c++/15.2.1/bits/uniform_int_dist.h:
 
 /usr/include/c++/15.2.1/cwchar:
@@ -6949,6 +3347,14 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 /usr/include/RConfigure.h:
 
 /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/DetectorConstruction.hh:
+
+/usr/include/Geant4/PTL/VTask.hh:
+
+/usr/include/Geant4/G4Para.icc:
+
+/usr/include/Geant4/evtdefs.hh:
+
+/usr/include/c++/15.2.1/bits/unordered_set.h:
 
 /usr/include/c++/15.2.1/bits/uses_allocator.h:
 
@@ -7010,8 +3416,6 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 
 /usr/include/c++/15.2.1/ext/alloc_traits.h:
 
-/usr/lib/libSM.so:
-
 /usr/include/CLHEP/Random/RandBinomial.h:
 
 /usr/include/c++/15.2.1/mutex:
@@ -7023,8 +3427,6 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 /usr/include/c++/15.2.1/ext/type_traits.h:
 
 /usr/include/c++/15.2.1/bits/this_thread_sleep.h:
-
-/usr/lib/libexpat.so:
 
 /usr/include/c++/15.2.1/initializer_list:
 
@@ -7043,8 +3445,6 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 /usr/include/TBranch.h:
 
 /usr/include/c++/15.2.1/istream:
-
-/usr/lib/libG4VRML.so:
 
 /usr/include/CLHEP/Random/RandGamma.h:
 
@@ -7086,6 +3486,12 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 
 /usr/include/c++/15.2.1/string_view:
 
+/usr/include/bits/types/struct_timespec.h:
+
+/usr/include/c++/15.2.1/tr1/hypergeometric.tcc:
+
+/home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/PrimaryGeneratorAction.cc:
+
 /usr/include/Geant4/G4RunManagerFactory.hh:
 
 /usr/include/Geant4/G4String.hh:
@@ -7095,8 +3501,6 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 /usr/include/Geant4/G4TrajectoryModelFactories.hh:
 
 /usr/include/c++/15.2.1/tr1/exp_integral.tcc:
-
-/usr/lib/root/libMathCore.so:
 
 /usr/include/c++/15.2.1/tr1/gamma.tcc:
 
@@ -7122,8 +3526,6 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 
 /usr/include/c++/15.2.1/unordered_map:
 
-/usr/lib/libnghttp3.so.9:
-
 /usr/include/c++/15.2.1/unordered_set:
 
 /usr/include/c++/15.2.1/thread:
@@ -7142,6 +3544,8 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
 
+/usr/include/Geant4/G4ParticleMomentum.hh:
+
 /usr/include/Geant4/G4GMocrenFile.hh:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
@@ -7149,8 +3553,6 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 /usr/include/CLHEP/Vector/LorentzVector.h:
 
 /usr/include/Geant4/G4NistManager.hh:
-
-/usr/lib/libG4ptl.so.3.0.0:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr.h:
 
@@ -7184,23 +3586,15 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 
 /usr/include/linux/errno.h:
 
-/usr/lib/crtn.o:
-
 /usr/include/linux/limits.h:
-
-/usr/lib/libmvec.so.1:
 
 /usr/include/bits/fp-logb.h:
 
 /usr/include/linux/stddef.h:
 
-/usr/lib/libpcre2-16.so.0:
-
 /usr/include/locale.h:
 
 /usr/include/snprintf.h:
-
-/usr/lib/root/libNet.so:
 
 /usr/include/sys/types.h:
 
@@ -7216,8 +3610,6 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 
 /usr/include/strtok.h:
 
-/usr/lib/libzstd.so.1:
-
 /usr/include/sys/cdefs.h:
 
 /usr/include/c++/15.2.1/bits/chrono.h:
@@ -7228,11 +3620,7 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 
 /usr/include/time.h:
 
-/usr/lib/root/libImt.so:
-
 /usr/include/c++/15.2.1/bits/fstream.tcc:
-
-/usr/lib/libnsl.so.3:
 
 /usr/include/Geant4/G4UserStackingAction.hh:
 
@@ -7242,7 +3630,9 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 
 /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/DetectorConstruction.cc:
 
-/usr/lib/root/libTreePlayer.so:
+/usr/include/c++/15.2.1/memory:
+
+/home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/High_Precision_Fibre_layer.hh:
 
 /home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/Thin_layers.hh:
 
@@ -7364,21 +3754,15 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 
 /usr/include/Geant4/G4RotationMatrix.hh:
 
-/usr/lib/libssl.so.3:
-
 /usr/include/TDirectory.h:
 
 /usr/include/Geant4/G4Transform3D.hh:
-
-/usr/lib/libXm.so:
 
 /usr/include/Geant4/G4SceneHandlerList.hh:
 
 /usr/include/Geant4/G4UIcommand.hh:
 
 /usr/include/Geant4/G4UIdirectory.hh:
-
-/usr/lib/libicuuc.so.78:
 
 /usr/include/TArray.h:
 
@@ -7398,19 +3782,11 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h:
 
-/usr/include/CLHEP/Random/RandPoissonQ.h:
-
-/home/matei/SHiP/Software/Calo_G4_Standalone/geant_plate/src/Thin_layers.cc:
-
 /usr/include/Geant4/G4AffineTransform.icc:
 
+/usr/include/CLHEP/Random/RandPoissonQ.h:
+
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h:
-
-/usr/include/Geant4/G4UIcmdWithADoubleAndUnit.hh:
-
-/usr/include/Geant4/G4VSteppingVerbose.hh:
-
-/usr/include/Geant4/G4UIcmdWithAString.hh:
 
 /usr/include/Geant4/G4DCofThisEvent.hh:
 
@@ -7419,6 +3795,16 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 /usr/include/c++/15.2.1/bits/hash_bytes.h:
 
 /usr/include/Geant4/G4Event.hh:
+
+/usr/include/Geant4/G4PDefManager.hh:
+
+/usr/include/CLHEP/Random/RandSkewNormal.icc:
+
+/usr/include/Geant4/G4ParticleDefinition.hh:
+
+/usr/include/Geant4/G4ParticleChange.hh:
+
+/usr/include/Geant4/G4ParticleTable.icc:
 
 /usr/include/Geant4/G4PrimaryParticle.hh:
 
@@ -7429,17 +3815,3 @@ CMakeFiles/geant_plate.dir/src/PrimaryGeneratorAction.cc.o:
 /usr/include/Geant4/G4PrimaryVertex.hh:
 
 /usr/include/Geant4/G4TrajectoryContainer.hh:
-
-/usr/include/CLHEP/Vector/defs.h:
-
-/usr/include/Geant4/G4VHitsCollection.hh:
-
-/usr/include/Geant4/G4VTrajectory.hh:
-
-/usr/include/Geant4/PTL/VTask.hh:
-
-/usr/include/Geant4/G4Para.icc:
-
-/usr/include/c++/15.2.1/bits/unordered_set.h:
-
-/usr/include/Geant4/evtdefs.hh:

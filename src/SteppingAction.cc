@@ -13,22 +13,26 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
   const auto edep = step->GetTotalEnergyDeposit();
   if (edep <= 0.) return;
 
-  auto touch = step->GetPreStepPoint()->GetTouchableHandle();
-  if (!touch) return;
 
-  // Find the layer container in the hierarchy (robust)
-  int layerID   = -1;
+
+  int layerID = -1;
   int layertype = -1;
-
+  
+  auto touch = step->GetPreStepPoint()->GetTouchableHandle();
   for (int d = 0; d <= touch->GetHistoryDepth(); ++d) {
     auto* vol = touch->GetVolume(d);
     if (!vol) continue;
-
-    const auto& name = vol->GetName();
-    if (name == "WideLayerPV") { layertype = 0; layerID = vol->GetCopyNo(); break; }
-    if (name == "ThinLayerPV") { layertype = 1; layerID = vol->GetCopyNo(); break; }
+  
+    const auto& nm = vol->GetName();
+    if (nm.rfind("WideLayerPV", 0) == 0) { layertype = 0; layerID = vol->GetCopyNo(); break; }
+    if (nm.rfind("ThinLayerPV", 0) == 0) { layertype = 1; layerID = vol->GetCopyNo(); break; }
   }
+  
   if (layerID < 0) return;
+  
+  // make it 1..40
+  layerID += 1;
+
 
   // Bar is always at depth 0
   const int barID = touch->GetVolume(0)->GetCopyNo();

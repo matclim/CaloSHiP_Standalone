@@ -30,6 +30,14 @@ public:
   void SetThinT(G4double v)       { fThinT = v; }
   void SetThinPitch(G4double v)   { fThinPitch = v; }
 
+  void SetFibrePlaneXY(G4double v)   { fFibrePlaneXY = v; }
+  void SetFibreLen(G4double v)       { fFibreLen = v; }
+  void SetFibreDiam(G4double v)      { fFibreDiam = v; }
+  void SetFibrePitch(G4double v)     { fFibrePitch = v; }
+  void SetFibreModuleDz(G4double v)  { fFibreModuleDz = v; }
+  
+  void SetAirGap(G4double v)         { fAirGap = v; }
+
 private:
   // Detector code (sequence of 1/2/3/4/7; other chars ignored)
   G4String fCode;
@@ -44,6 +52,14 @@ private:
   G4double fThinPlaneXY;
   G4double fThinT;
   G4double fThinPitch;
+
+  G4double fFibrePlaneXY;
+  G4double fFibreLen;
+  G4double fFibreDiam;
+  G4double fFibrePitch;
+  G4double fFibreModuleDz;
+
+
 
   DetectorMessenger* fMessenger = nullptr;
 };
